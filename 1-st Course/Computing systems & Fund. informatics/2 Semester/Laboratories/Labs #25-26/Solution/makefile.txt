@@ -1,0 +1,16 @@
+CC = gcc
+CFLAGS = -std=c99 -Wall -g
+OBJ = main.o duque.o
+PROG = program
+
+build: main.o duque.o
+$(CC) $(CFLAGS) -o $(PROG) $(OBJ)
+
+main.o: main.c
+$(CC) $(CFLAGS) -c main.c
+
+duque.o: duque.c
+$(CC) $(CFLAGS) -c duque.c
+
+clean:
+rm $(PROG) $(OBJ)
