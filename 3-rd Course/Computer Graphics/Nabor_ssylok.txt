@@ -1,0 +1,30 @@
+В случае обнаружения неактуальных, нерабочих ссылок и материалов - просьба сообщить kaf807@mail.ru
+Если Вы нашли другие полезные материалы по теме - просьба сообщить kaf807@mail.ru
+
+База
+
+https://www.desmos.com/?lang=ru // проверка ЛР1
+https://compgraphics.info/ // теория, алгоритмы, примеры на С++ и OpenGL
+https://www.school30.spb.ru/cgsg/cgc2018/ // Введение в компьютерную графику (cgc2018)
+http://eor.dgu.ru/lectures_f/%D0%9A%D1%83%D1%80%D1%81_%D0%BB%D0%B5%D1%86%D0%B8%D0%B9_%D0%9A%D0%BE%D0%BC%D0%BF%D1%8C%D1%8E%D1%82%D0%B5%D1%80%D0%BD%D0%B0%D1%8F_%D0%B3%D0%B5%D0%BE%D0%BC%D0%B5%D1%82%D1%80%D0%B8%D1%8F_%D0%B8_%D0%B3%D1%80%D0%B0%D1%84%D0%B8%D0%BA%D0%B0_%D0%93%D0%B0%D0%B4%D0%B6%D0%B8%D0%B5%D0%B2_%D0%90_%D0%9C/%D0%BB%D0%B5%D0%BA%D1%86%D0%B8%D1%8F_9.htm // Курс лекций Гаджиева А.М.
+https://habr.com/ru/post/572760/ // 3D моделирование в Python
+https://youtu.be/ih20l3pJoeU  // Code-It-Yourself! 3D Graphics Engine Part #1 - Triangles & Projection
+https://youtu.be/cPvRvX4o5Xc // Qt уроки #4. QGraphicsScene или как работать с графикой в Qt
+https://evileg.com/ru/post/80/ // Qt/C++ - Урок 017. QGraphicsScene или как работать с графикой в Qt
+
+OpenGL и аналоги 
+
+http://pmg.org.ru/nehe/index.html // Уроки по OpenGL с сайта NeHe
+https://vulkan-tutorial.com/Introduction // Учебник по Вулкану
+http://www.songho.ca/opengl/index.html // учебник по OpenGL
+http://www.songho.ca/opengl/gl_projectionmatrix.html // OpenGL Projection Matrix
+http://www.opengl-tutorial.org/ru/beginners-tutorials/tutorial-3-matrices/ // учебник по OpenGL
+https://youtu.be/Ga3vxG-Ya34 // Визуализация 3d объектов при помощи полигональных сеток
+http://steps3d.narod.ru/tutorials/pyopengl-tutorial.html // Работа с OpenGL и GLUT в языке Python, библиотека PyOpenGL, расширение Python'а
+http://esate.ru/uroki/OpenGL/uroki-OpenGL-c-sharp/ // OpenGL на С#
+https://habr.com/ru/post/527914/ // Пишем программу 3D-моделирования в 500 строках кода
+
+http://www.graph.unn.ru/rus/materials/CG/CG05_Splines.pdf // Моделирование кривых и поверхностей. Сплайны
+https://www.graphicon.ru/oldgr/courses/cg/lectures/2006/lecture12/lect12_06.pdf // Прямые Кривые Поверхности
+
+https://f.usemind.org/files/b/1/1142_UseMind.ORG_WebGL_programmirovanie_trehmernoy_grafiki_2015.pdf // WebGL:программирование трехмерной графики Коичи Мацуда (Kouichi Matsuda) Роджер Ли (Rodger Lea)
