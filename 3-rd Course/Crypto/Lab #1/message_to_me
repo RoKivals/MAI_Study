@@ -1,0 +1,49 @@
+Content-Type: multipart/signed; micalg=pgp-sha256;
+ protocol="application/pgp-signature";
+ boundary="------------AVqHK0z5EjhAT1u50fvlF0RC"
+
+This is an OpenPGP/MIME signed message (RFC 4880 and 3156)
+--------------AVqHK0z5EjhAT1u50fvlF0RC
+Content-Type: multipart/mixed; boundary="------------WeUa4wd0gqLHVm270CU0b107";
+ protected-headers="v1"
+Subject: =?UTF-8?B?UmU6INCe0YDRg9GB0YHQutC40Lkg0JLRj9GH0LXRgdC70LDQsiDQoNGD?=
+ =?UTF-8?B?0YHQu9Cw0L3QvtCy0LjRhyDQnDjQni0zMDbQkS0yMSDQm9Cg4oSWMQ==?=
+From: awh <awh@cs.msu.ru>
+To: Touareg VW <slava11112003@gmail.com>
+Message-ID: <662e1585-8694-59ab-d8fa-9795b91881d8@cs.msu.ru>
+References: <CABGt-2nnOOrG1Nnv6nGaJwHKVF_XHnZgdSFWkAEBzLfJFATAXw@mail.gmail.com>
+In-Reply-To: <CABGt-2nnOOrG1Nnv6nGaJwHKVF_XHnZgdSFWkAEBzLfJFATAXw@mail.gmail.com>
+
+--------------WeUa4wd0gqLHVm270CU0b107
+Content-Type: text/plain; charset=UTF-8; format=flowed
+Content-Transfer-Encoding: base64
+
+0JrQu9GO0Ycg0LLRgNC+0LTQtSDRgNCw0LHQvtGC0LDQtdGCIQ0KDQowOS4wMy4yMDI0IDEz
+OjA1LCBUb3VhcmVnIFZXINC/0LjRiNC10YI6DQo+INCY0YHQv9GA0LDQstC70LXQvdC40LUg
+0L7RiNC40LHQutC4DQoNCi0tIA0K0KEg0YPQstCw0LbQtdC90LjQtdC8LA0KICDQkNCy0LPR
+g9GB0YINCg==
+
+--------------WeUa4wd0gqLHVm270CU0b107--
+
+--------------AVqHK0z5EjhAT1u50fvlF0RC
+Content-Type: application/pgp-signature; name="OpenPGP_signature.asc"
+Content-Description: OpenPGP digital signature
+Content-Disposition: attachment; filename="OpenPGP_signature"
+
+-----BEGIN PGP SIGNATURE-----
+
+wsF5BAABCAAjFiEE5W8b6rNEcsHXjtm0PZjpbKTg6WQFAmXzPfkFAwAAAAAACgkQPZjpbKTg6WTH
+nw//cqOkJmrnWvRdmtgKZ4viSOXCXifkt08BRc8DwNFIs8/TFZ8zDr268hwUseUIsjuC6iHlahNZ
+9T4bcW6+TqIvlxHhvRVtdYQMAcqy0zIuCUCV5JeN2OBo84OjosKcrlAA3YIEHUhSzvHEUea1cCjn
+JghSrZRKz45qhDmlpmsirgiu9WFwsPY8mxL9pGKNvetHagyLI+BIpBz9b56WCcgZPaF/bF0vciKy
+zUgvyWbAkwFyb/rgZCg1CcOSQlwOWY2UMNJ+RFVz3P9c2nY6WGkQdZzjnUj2ZPLx+XCQR6AjCx6r
+68aa6E+DAhxFngE4Hnf/IgWMgWWT7WToQoDDD4yhHuTQEmOuG1vxBdDEKfOkfDPWJFa+9kVqo/Nt
+Z7HLGU0yMbmO/lC7+iMCk4QoSa8GTekmmHMBNDsugTShjsOhfLsDe9sM6hiLhm0YjN3Mitt1ckvN
+A0nJ8LYLcGMeWy1KyRsyMnaILjrRErxRj20eZGRfFyKvuR3SQq+ODOzcri0R+lbdckoaZtkHyU3A
+2vywlsk+8Q+1SIhyBb6GBZiYDZ4DseJf7y9/ZG/JekIcOgR/gadaoOOEcxwNs90NJ2I/wn99G4ti
+CjtPMopfQvRl1xZS+u+xx/MIB6vXPfUP/sfBRR7xIPCRP0rEMBBOPfVjf9xzj6C+pFAH0SCfMmlj
+90Y=
+=V5uo
+-----END PGP SIGNATURE-----
+
+--------------AVqHK0z5EjhAT1u50fvlF0RC--
