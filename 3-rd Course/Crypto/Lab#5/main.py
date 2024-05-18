@@ -1,4 +1,4 @@
-from ec import EllipticCurve
+import EllipseCurve as EC
 
 
 def main():
@@ -8,14 +8,14 @@ def main():
     time = int(input("time: "))
     print()
 
-    ec = EllipticCurve(a, b, p)
+    ec = EC.EllipticCurve(a, b, p)
 
     time_passed = 0
     iter = 1
 
     while time_passed < time:
         print("Iter", iter)
-        ec.set_p(ec.get_next_prime_number(ec.p + iter * 3000))
+        ec.set_p(EC.get_next_prime_number(ec.p + iter * 3000))
         time_passed = ec.step()
         iter += 1
 

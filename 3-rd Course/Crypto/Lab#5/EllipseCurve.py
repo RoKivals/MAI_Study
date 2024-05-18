@@ -3,103 +3,122 @@ import random
 import time
 
 
-class EllipticCurve:
-    def __init__(self, A, B, P):
-        self.A = A
-        self.B = B
-        self.p = P
-        self.ap = A % P
-        self.bp = B % P
-        self.random = random.Random(2904)
-    
-    def is_elliptic_curve(self, x, y):
-        return (y**2) % self.p == (x**3 + self.ap * x + self.bp) % self.p
-    
-    def __str__(self):
-        return f"y^2 = x^3 + {self.ap}*x + {self.bp} % {self.p}"
-    
-    @staticmethod
-    def extended_euclidean_algorithm(a, b):
-        s, old_s = 0, 1
-        t, old_t = 1, 0
-        r, old_r = b, a
-        
-        while r != 0:
-            quotient = old_r // r
-            old_r, r = r, old_r - quotient * r
-            old_s, s = s, old_s - quotient * s
-            old_t, t = t, old_t - quotient * t
-        
-        return old_r, old_s, old_t
-    
-    def inverse_of(self, n):
-        gcd, x, _ = self.extended_euclidean_algorithm(n, self.p)
+def is_prime(number):
+    for i in range(2, int(sqrt(number)) + 1):
+        if number % i == 0:
+            return False
+    return True
 
-        if gcd != 1:
-            return -1
+
+def get_next_prime_number(start):
+    while not is_prime(start):
+        start += 1
+    return start
+
+
+class EllipticCurve:
+    class Point:
+        def __init__(self, x, y):
+            self.x = x
+            self.y = y
+
+        def __eq__(self, point) -> bool:
+            return self.x == point.x and self.y == point.y
+
+        def isCenter(self):
+            return self.x == 0 and self.y == 0
+
+    def __init__(self, a, b, p):
+        self.a = a
+        self.b = b
+        self.p = p
+        self.ap = a % p
+        self.bp = b % p
+        self.random = random.Random(2904)
+
+    def set_p(self, value):
+        if is_prime(value):
+            self.p = value
+
+    def is_elliptic_curve(self, point: Point):
+        return (point.y**2) % self.p == (point.x**3 + self.ap * point.x + self.bp) % self.p
+
+    def __repr__(self):
+        return f"y^2 = x^3 + {self.ap}*x + {self.bp} % {self.p}"
+
+    # Реализуем деление по модулю p
+    # Расширенный алгоритм Евклида, находит НОД для коэф a, b, а также x, y
+    # в уравнении ax + by = gcd
+    @staticmethod
+    def extended_gcd(a, b):
+        prev_gcd, gcd = a, b
+        prev_x, x = 1, 0
+        prev_y, y = 0, 1
+
+        while gcd:
+            quotient = prev_gcd // gcd
+            prev_gcd, gcd = gcd, prev_gcd - quotient * gcd
+            prev_x, x = x, prev_x - quotient * x
+            prev_y, y = y, prev_y - quotient * y
+
+        return prev_gcd, prev_x, prev_y
+
+    def inverse_of(self, n):
+        gcd, x, _ = self.extended_gcd(n, self.p)
+
+        return x % self.p if gcd == 1 else -1
+
+    def add_points(self, point_1: Point, point_2: Point):
+        if point_1.isCenter():
+            return point_2
+
+        if point_2.isCenter():
+            return point_1
+
+        if point_1.x == point_2.x and point_1.y != point_2.y:
+            return self.Point(0, 0)
+
+        if point_1 == point_2:
+            s = (3 * point_1.x ** 2 + self.ap) * \
+                self.inverse_of(2 * point_1.y) % self.p
         else:
-            return x % self.p
-    
-    def add_points(self, p1, p2):
-        if p1 == (0, 0):
-            return p2
-        
-        if p2 == (0, 0):
-            return p1
-        
-        if p1[0] == p2[0] and p1[1] != p2[1]:
-            return (0, 0)
-        
-        if p1 == p2:
-            s = (3 * p1[0]**2 + self.ap) * self.inverse_of(2 * p1[1]) % self.p
-        else:
-            s = ((p1[1] - p2[1]) * self.inverse_of(p1[0] - p2[0])) % self.p
-        
-        x = (s**2 - 2 * p1[0]) % self.p
-        y = (p1[1] + s * (x - p1[0])) % self.p
-        
-        return (x, -y % self.p)
-    
+            s = ((point_1.x - point_2.y) *
+                 self.inverse_of(point_1.x - point_2.x)) % self.p
+
+        x = (s**2 - 2 * point_1.x) % self.p
+        y = (point_1.y + s * (x - point_1.x)) % self.p
+
+        return self.Point(x, -y % self.p)
+
     def order_point(self, point):
         i = 0
         check = self.add_points(point, point)
-        while check != (0, 0):
+        while not check.isCenter():
             check = self.add_points(check, point)
             i += 1
 
         return i
-    
+
     def step(self):
-        self.ap = self.A % self.p
-        self.bp = self.B % self.p
+        self.ap = self.a % self.p
+        self.bp = self.b % self.p
         print(self)
-        
+
         points = []
         start_time = time.time()
-        
+
         for x in range(self.p):
             for y in range(self.p):
-                if self.is_elliptic_curve(x, y):
-                    points.append((x, y))
-        
+                curr_point = self.Point(x, y)
+                if self.is_elliptic_curve(curr_point):
+                    points.append(curr_point)
+
         print("Curve order:", len(points))
-        
+
         random_point = random.choice(points)
         print(f"Point {random_point} order:", self.order_point(random_point))
-        
+
         elapsed_time = time.time() - start_time
         print("Time:", elapsed_time, "s\n")
 
         return elapsed_time
-    
-    def is_prime(self, number):
-        for i in range(2, sqrt(number)):
-            if number % i == 0:
-                return False
-        return True
-    
-    def get_next_prime_number(self, start):
-        while not self.is_prime(start):
-            start += 1
-
-        return start
