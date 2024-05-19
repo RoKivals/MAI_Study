@@ -24,6 +24,9 @@ class EllipticCurve:
 
         def __eq__(self, point) -> bool:
             return self.x == point.x and self.y == point.y
+        
+        def __repr__(self):
+            return f"Point: x={self.x}, y={self.y}"
 
         def isCenter(self):
             return self.x == 0 and self.y == 0
@@ -82,7 +85,7 @@ class EllipticCurve:
             s = (3 * point_1.x ** 2 + self.ap) * \
                 self.inverse_of(2 * point_1.y) % self.p
         else:
-            s = ((point_1.x - point_2.y) *
+            s = ((point_1.y - point_2.y) *
                  self.inverse_of(point_1.x - point_2.x)) % self.p
 
         x = (s**2 - 2 * point_1.x) % self.p
