@@ -42,7 +42,6 @@ except (Exception, Error) as error:
 
 # region
 class BrandWindow(QtWidgets.QMainWindow, Gui.Ui_MainWindow):
-
     def __init__(self, cursor):
         super().__init__()
         self.cur = cursor
@@ -356,25 +355,19 @@ class AuthWindow(QtWidgets.QMainWindow, AuthGui.Ui_MainWindow):
     def reg_handle(self):
         login = self.LoginRegLine.text()
         password = self.PasswordRegLine.text()
-        # password = hash(self.PasswordRegLine.text())
-
-        try:
-            print(login, password, sep='____')
+        self.cur.execute(f'SELECT login, password from auth.users where login = \'{login}\';')
+        res = self.cur.fetchone()
+        if res:
+            self.NotificationReg.setText("Такой пользователь уже зарегистрирован")
+        else:
             self.cur.execute(
-                f'INSERT INTO auth.users (login, password, category) VALUES (\'{login}\', \'{password}\', \'user\');'
-            )
-            user = User(login, 'user')
+                f'INSERT INTO auth.users (login, password, category) VALUES (\'{login}\', \'{password}\', \'user\');')
             global law
             law = 0
             self.NotificationReg.setText("")
-            self.start_brand_window()
+            self.next_window()
 
-        except Exception as e:
-            self.NotificationReg.setText("Такой пользователь уже зарегистрирован")
-            self.cur.execute("ROLLBACK;")
-            print("Ошибка при работе с PostgreSQL", e)
-
-    def start_brand_window(self):
+    def next_window(self):
         global window
 
         window = BrandWindow(self.cur)
@@ -583,10 +576,11 @@ class DeleteDialog(QtWidgets.QDialog, DeleteGui.Ui_Dialog):
         self.close()
 
 
-if __name__ == '__main__':
+if __name__ == '__main__':  # Если мы запускаем файл напрямую, а не импортируем
     app = QtWidgets.QApplication(sys.argv)  # Новый экземпляр QApplication
-
     law = None
+    # window = BrandWindow(cursor)  # Создаём объект класса ExampleApp
+
     window = AuthWindow(cursor)
     window.show()  # Показываем окно
     app.exec_()
