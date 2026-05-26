@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <widget class="QWidget" name="authWidget" native="true">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>275</x>
+      <y>200</y>
+      <width>250</width>
+      <height>200</height>
+     </rect>
+    </property>
+    <widget class="QLineEdit" name="LoginAuthLine">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>250</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Логин</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="PasswordAuthLine">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>40</y>
+       <width>250</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Пароль</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="AuthAuthButton">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>100</y>
+       <width>250</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Войти</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="AuthRegButton">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>150</y>
+       <width>250</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Зарегистрироваться</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="NotificationAuth">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>80</y>
+       <width>250</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="regWidget" native="true">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>275</x>
+      <y>200</y>
+      <width>250</width>
+      <height>200</height>
+     </rect>
+    </property>
+    <widget class="QLineEdit" name="LoginRegLine">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>250</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Логин</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="PasswordRegLine">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>40</y>
+       <width>250</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Пароль</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="RegRegButton">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>120</y>
+       <width>250</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Зарегистрироваться</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="NotificationReg">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>80</y>
+       <width>250</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

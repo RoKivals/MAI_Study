@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QListWidget" name="ListWidget">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>30</y>
+      <width>370</width>
+      <height>540</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QWidget" name="InfoWidget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>30</y>
+      <width>360</width>
+      <height>541</height>
+     </rect>
+    </property>
+    <widget class="QPushButton" name="InfoButton">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>380</y>
+       <width>135</width>
+       <height>60</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Информация</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="NextButton">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>380</y>
+       <width>135</width>
+       <height>60</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Модели</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="NameLabel">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>329</y>
+       <width>301</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Название Бренда</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="PicLabel">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>30</y>
+       <width>300</width>
+       <height>300</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap>C:/Users/T/Pictures/FPNorKVUcCcp3Oh.jpg</pixmap>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="BackButton">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>500</y>
+       <width>135</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Назад</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="AddButton">
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>500</y>
+       <width>135</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Добавить</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
