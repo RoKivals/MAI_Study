@@ -1,0 +1,1 @@
+https://github.com/MAILabs-Education/FP_Lab1_ru

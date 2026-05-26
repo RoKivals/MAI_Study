@@ -1,0 +1,10 @@
+print(1 <> 2)
+print(1 = 2)
+print(1 > 2)
+print(1 < 1)
+let a = 1
+let b = 2
+print(a + b)
+print(1 + 1)
+let lst = [1 2 3 true]
+print(lst)
