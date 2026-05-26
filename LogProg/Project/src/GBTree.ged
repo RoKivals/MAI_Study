@@ -1,0 +1,156 @@
+﻿0 HEAD
+1 SOUR AgelongTree
+2 NAME Древо Жизни
+2 VERS 5.6
+2 CORP Genery.com
+1 CHAR UTF-8
+1 DATE 11 DEC 2022
+1 GEDC
+2 VERS 5.5.1
+2 FORM Lineage-Linked
+1 SUBM @U0@
+0 @U0@ SUBM
+1 NAME Древо Жизни, https://genery.com/ru
+0 @I1@ INDI
+1 _UID F4DBDF21_18
+1 NAME Eugenie Victoria Helena /York/
+2 GIVN Eugenie Victoria Helena
+1 SEX F
+0 @I2@ INDI
+1 _UID F4DBDF21_11
+1 NAME William Arthur Philip Louis /Windsor/
+2 GIVN William Arthur Philip Louis
+1 SEX M
+1 FAMC @F1@
+0 @I3@ INDI
+1 _UID F4DBDF21_12
+1 NAME Henry Charles Albert David /Windsor/
+2 GIVN Henry Charles Albert David
+1 SEX M
+1 FAMC @F1@
+0 @I4@ INDI
+1 _UID F4DBDF21_4
+1 NAME Elizabeth Alexandra Mary /Windsor/
+2 GIVN Elizabeth Alexandra Mary
+1 SEX F
+1 DEAT Y
+1 FAMS @F2@
+0 @I5@ INDI
+1 _UID F4DBDF21_9
+1 NAME Edward Antony Richard Louis /Windsor/
+2 GIVN Edward Antony Richard Louis
+1 SEX M
+1 FAMC @F2@
+1 FAMS @F3@
+0 @I6@ INDI
+1 _UID F4DBDF21_7
+1 NAME Anne Elizabeth Alice Louise /Windsor/
+2 GIVN Anne Elizabeth Alice Louise
+1 SEX F
+1 FAMC @F2@
+1 FAMS @F4@
+0 @I7@ INDI
+1 _UID F4DBDF21_8
+1 NAME Andrew Albert Christian Edward /Windsor/
+2 GIVN Andrew Albert Christian Edward
+1 SEX M
+1 FAMC @F2@
+1 FAMS @F5@
+0 @I8@ INDI
+1 _UID F4DBDF21_15
+1 NAME Zara Anne Elizabeth /Tindall (Phillips)/
+2 GIVN Zara Anne Elizabeth
+2 SURN Phillips
+1 SEX F
+1 FAMC @F4@
+0 @I9@ INDI
+1 _UID F4DBDF21_10
+1 NAME Diana Frances /Spencer/
+2 GIVN Diana Frances
+1 SEX F
+1 DEAT Y
+1 FAMS @F1@
+0 @I10@ INDI
+1 _UID F4DBDF21_14
+1 NAME Peter Mark Andrew /Phillips/
+2 GIVN Peter Mark Andrew
+1 SEX M
+1 FAMC @F4@
+0 @I11@ INDI
+1 _UID F4DBDF21_13
+1 NAME Mark Anthony Peter /Phillips/
+2 GIVN Mark Anthony Peter
+1 SEX M
+1 FAMS @F4@
+0 @I12@ INDI
+1 _UID F4DBDF21_20
+1 NAME Louise Alice Elizabeth Mary /Mountbatten-Windsor/
+2 GIVN Louise Alice Elizabeth Mary
+1 SEX F
+1 FAMC @F3@
+0 @I13@ INDI
+1 _UID F4DBDF21_21
+1 NAME James Alexander Philip Theo /Mountbatten-Windsor/
+2 GIVN James Alexander Philip Theo
+1 SEX M
+1 FAMC @F3@
+0 @I14@ INDI
+1 _UID F4DBDF21_6
+1 NAME Charles Philip Arthur George /Mountbatten-Windsor/
+2 GIVN Charles Philip Arthur George
+1 SEX M
+1 FAMC @F2@
+1 FAMS @F1@
+0 @I15@ INDI
+1 _UID F4DBDF21_17
+1 NAME Beatrice Elizabeth Mary /Mountbatten-Windsor/
+2 GIVN Beatrice Elizabeth Mary
+1 SEX F
+1 FAMC @F5@
+0 @I16@ INDI
+1 _UID F4DBDF21_19
+1 NAME Sophie Helen /Mountbatten-Windsor (Rhys-Jones)/
+2 GIVN Sophie Helen
+2 SURN Rhys-Jones
+1 SEX F
+1 FAMS @F3@
+0 @I17@ INDI
+1 _UID F4DBDF21_5
+1 NAME Philip /Mountbatten/
+2 GIVN Philip
+1 SEX M
+1 DEAT Y
+1 FAMS @F2@
+0 @I18@ INDI
+1 _UID F4DBDF21_16
+1 NAME Sarah Margaret /Ferguson/
+2 GIVN Sarah Margaret
+1 SEX F
+1 FAMS @F5@
+0 @F1@ FAM
+1 HUSB @I14@
+1 WIFE @I9@
+1 CHIL @I2@
+1 CHIL @I3@
+0 @F2@ FAM
+1 HUSB @I17@
+1 WIFE @I4@
+1 CHIL @I14@
+1 CHIL @I6@
+1 CHIL @I7@
+1 CHIL @I5@
+0 @F3@ FAM
+1 HUSB @I5@
+1 WIFE @I16@
+1 CHIL @I12@
+1 CHIL @I13@
+0 @F4@ FAM
+1 HUSB @I11@
+1 WIFE @I6@
+1 CHIL @I10@
+1 CHIL @I8@
+0 @F5@ FAM
+1 HUSB @I7@
+1 WIFE @I18@
+1 CHIL @I15@
+0 TRLR

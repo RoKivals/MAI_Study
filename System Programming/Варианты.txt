@@ -1,0 +1,57 @@
+Seed - 1234567890
+1 G G = {( a, b, c, d, f, epsilon, k, n, s ),( S, A, B, C, D, F, K, N, Q, G, H ),( S → aAB, A → bC, B → cA, D → F, F → f, C → dDK, K → epsilon, N → a, Q → kG, S → sH, H → Hn, H → n),S}
+
+2 H G = {( a, d, c, epsilon, i, g, n, k ),( S, A, B, C, D, L, F, O, M, U, W ),( A → CD, C → d, D → c, B → L, L → a, S → ABF, F → epsilon, O → i, M → gUn, S → kW, W → Wk, W → k),S}
+
+3 V G = {( a, b, c, d, f, g, epsilon, l, x ),( S, A, B, C, D, O, Y, X, W, R, T ),( A → BCD, B → cD, C → dfB, D → O, O → g, S → aAbY, Y → epsilon, X → l, W → dR, B → xT, T → Tg, T → g),S}
+
+4 G G = {( a, b, c, d, f, epsilon, p, z, g, n, x ),( S, A, B, C, D, Y, V, T, I, R, Z, J ),( S → aAB, B → cA, C → dD, D → Y, Y → f, A → bCV, V → epsilon, T → pIz, R → gZn, C → xJ, J → Jb, J → b),S}
+
+5 H G = {( a, d, c, epsilon, f, p, r, o ),( S, A, B, C, D, Y, J, H, P, W, O, M ),( A → CD, C → d, D → c, B → Y, Y → a, S → ABJ, J → epsilon, H → aPf, W → pOr, S → oM, M → Mc, M → c),S}
+
+6 V G = {( a, b, c, d, f, g, epsilon, j, u, i ),( S, A, B, C, D, O, N, H, W, Z ),( A → BCD, B → cD, C → dfB, D → O, O → g, S → aAbN, N → epsilon, H → jS, W → j, S → iZ, Z → Zu, Z → u),S}
+
+7 G G = {( a, b, c, d, f, epsilon, p, i, v ),( S, A, B, C, D, U, F, Y, J, L, V ),( A → bC, B → cA, C → dD, D → U, U → f, S → aABF, F → epsilon, Y → pJ, L → i, B → vV, V → Vi, V → i),S}
+
+8 H G = {( a, d, c, epsilon, m, g, w, y, v ),( S, A, B, C, D, M, K, T, V, N, E ),( A → CD, B → a, C → d, D → M, M → c, S → ABK, K → epsilon, T → mVg, N → w, S → vE, E → Ey, E → y),S}
+
+9 V G = {( a, b, c, d, f, g, epsilon, w, p ),( S, A, B, C, D, R, G, W, I, X ),( S → aAb, A → BCD, B → cD, D → R, R → g, C → dfBG, G → epsilon, W → f, I → w, D → cX, X → Xp, X → p),S}
+
+10 G G = {( a, b, c, d, f, epsilon, n, y, s, q ),( S, A, B, C, D, R, G, N, X, Z, M ),( A → bC, B → cA, C → dD, D → R, R → f, S → aABG, G → epsilon, N → n, X → yZs, A → aM, M → Mq, M → q),S}
+
+11 H G = {( a, d, c, epsilon, r, m, h, b, o, x ),( S, A, B, C, D, E, J, Q, K, P, X, W ),( S → AB, C → d, D → c, B → E, E → a, A → CDJ, J → epsilon, Q → rKm, P → hXb, D → xW, W → Wo, W → o),S}
+
+12 V G = {( a, b, c, d, f, g, epsilon, z, h, o, y ),( S, A, B, C, D, K, T, M, F, W, V ),( S → aAb, A → BCD, C → dfB, D → K, K → g, B → cDT, T → epsilon, M → zF, W → h, S → yV, V → Vo, V → o),S}
+
+13 G G = {( a, b, c, d, f, epsilon, q, p, z, g ),( S, A, B, C, D, P, F, E, N, K, L, R ),( S → aAB, A → bC, C → dD, D → P, P → f, B → cAF, F → epsilon, E → qN, K → pLq, A → gR, R → Rz, R → z),S}
+
+14 H G = {( a, d, c, epsilon, t, p, h, y, z ),( S, A, B, C, D, W, M, H, G, P, R, V ),( S → AB, C → d, D → c, B → W, W → a, A → CDM, M → epsilon, H → tGp, P → hRc, B → zV, V → Vy, V → y),S}
+
+15 V G = {( a, b, c, d, f, g, epsilon, n, h, z ),( S, A, B, C, D, Q, I, P, E, V ),( S → aAb, A → BCD, B → cD, D → Q, Q → g, C → dfBI, I → epsilon, P → n, E → h, B → zV, V → Vh, V → h),S}
+
+16 G G = {( a, b, c, d, f, epsilon, g, p, h, i ),( S, A, B, C, D, M, R, H, F, P, K ),( S → aAB, A → bC, B → cA, D → M, M → f, C → dDR, R → epsilon, H → dCg, F → pPg, C → iK, K → Kh, K → h),S}
+
+17 H G = {( a, d, c, epsilon, j, t, y, l ),( S, A, B, C, D, H, E, F, Y, Q, I ),( A → CD, B → a, C → d, D → H, H → c, S → ABE, E → epsilon, F → jY, Q → t, C → lI, I → Iy, I → y),S}
+
+18 V G = {( a, b, c, d, f, g, epsilon, l, z, o, x ),( S, A, B, C, D, M, R, V, H, X, O, L ),( A → BCD, B → cD, C → dfB, D → M, M → g, S → aAbR, R → epsilon, V → lHz, X → cOo, C → gL, L → Lx, L → x),S}
+
+19 G G = {( a, b, c, d, f, epsilon, w, p, v ),( S, A, B, C, D, Q, R, I, F, N, H ),( S → aAB, A → bC, C → dD, D → Q, Q → f, B → cAR, R → epsilon, I → wC, F → pN, A → vH, H → Hf, H → f),S}
+
+20 H G = {( a, d, c, epsilon, q, x, y ),( S, A, B, C, D, I, K, H, Q, J ),( S → AB, C → d, D → c, B → I, I → a, A → CDK, K → epsilon, H → dB, Q → q, B → yJ, J → Jx, J → x),S}
+
+21 V G = {( a, b, c, d, f, g, epsilon, u, x, l, w ),( S, A, B, C, D, Q, I, V, U, X, Y, P ),( S → aAb, A → BCD, C → dfB, D → Q, Q → g, B → cDI, I → epsilon, V → uUx, X → lY, C → aP, P → Pw, P → w),S}
+
+22 G G = {( a, b, c, d, f, epsilon, n, j, m, q ),( S, A, B, C, D, N, E, U, Z, H, Y ),( S → aAB, B → cA, C → dD, D → N, N → f, A → bCE, E → epsilon, U → n, Z → jHm, B → nY, Y → Yq, Y → q),S}
+
+23 H G = {( a, d, c, epsilon, p, v, r, z ),( S, A, B, C, D, X, I, Q, O, R, P ),( A → CD, B → a, C → d, D → X, X → c, S → ABI, I → epsilon, Q → p, O → vR, A → zP, P → Pr, P → r),S}
+
+24 V G = {( a, b, c, d, f, g, epsilon, p, t, s ),( S, A, B, C, D, E, F, Z, G, V, W ),( A → BCD, B → cD, C → dfB, D → E, E → g, S → aAbF, F → epsilon, Z → pS, G → cVt, A → cW, W → Ws, W → s),S}
+
+25 G G = {( a, b, c, d, f, epsilon, v, l, i ),( S, A, B, C, D, V, R, E, Z, L ),( S → aAB, B → cA, C → dD, D → V, V → f, A → bCR, R → epsilon, E → v, Z → l, S → fL, L → Li, L → i),S}
+
+26 H G = {( a, d, c, epsilon, l, m, n, o ),( S, A, B, C, D, L, W, Y, R, Z, V ),( S → AB, B → a, C → d, D → L, L → c, A → CDW, W → epsilon, Y → l, R → mZn, S → oV, V → Vl, V → l),S}
+
+27 V G = {( a, b, c, d, f, g, epsilon, v, u, k ),( S, A, B, C, D, K, R, P, Y, L, X ),( A → BCD, B → cD, C → dfB, D → K, K → g, S → aAbR, R → epsilon, P → v, Y → aL, D → kX, X → Xu, X → u),S}
+
+28 G G = {( a, b, c, d, f, epsilon, v, u, r ),( S, A, B, C, D, F, R, T, V, G, E ),( S → aAB, B → cA, C → dD, D → F, F → f, A → bCR, R → epsilon, T → f, V → vGu, S → rE, E → Ea, E → a),S}
+
