@@ -1,0 +1,480 @@
+#include <iostream>
+#include <string>
+#include <fstream>
+#include <algorithm>
+#include <vector>
+
+// T обычно располагается в диапазоне от 50 до 2К => все числа, работающие с индексами можно взять за uint16_t
+
+// h ≤ logT((n+1) / 2)
+// min grade factor
+// T - 1 <= len(keys) <= 2T - 1
+const int T = 3;
+
+/// TODO: заменить всё на векторы
+struct Node {
+  int keyCount = 0;
+  bool isLeaf = false;
+//  std::vector <std::string> keys;
+//  std::vector <uint64_t> values;
+//  std::vector <Node> children;
+  std::string keys[2 * T - 1];
+  uint64_t values[2 * T - 1];
+  Node *children[2 * T];
+};
+
+struct Btree {
+ private:
+  static std::string &GetKey(Node *node, int i) {
+    return node->keys[i];
+  }
+
+  static uint64_t GetValue(Node *node, int i) {
+    return node->values[i];
+  }
+
+  static Node *GetChild(Node *node, int i) {
+    return node->children[i];
+  }
+
+  static void SetKeyValue(Node *node, int i, std::string &key, uint64_t &val) {
+    node->keys[i] = key;
+    node->values[i] = val;
+  }
+
+  static void SetChild(Node *node, int i, Node *child) {
+    node->children[i] = child;
+  }
+
+  static bool NodeIsFull(Node *node) {
+    return node->keyCount == 2 * T - 1;
+  }
+
+  static std::string &MaxKey(Node *currNode) {
+    while (!currNode->isLeaf) {
+      currNode = GetChild(currNode, currNode->keyCount);
+    }
+    return currNode->keys[currNode->keyCount - 1];
+  }
+
+  static std::string &MinKey(Node *currNode) {
+    while (!currNode->isLeaf) {
+      currNode = GetChild(currNode, 0);
+    }
+    return currNode->keys[0];
+  }
+
+  static void MergeChildsToFull(Node *currNode, int pos) {
+    Node *leftChild = GetChild(currNode, pos);
+    Node *rightChild = GetChild(currNode, pos + 1);
+
+    auto temp_key = GetKey(currNode, pos);
+    auto temp_val = GetValue(currNode, pos);
+    SetKeyValue(leftChild, T - 1, temp_key, temp_val);
+
+    // Перемещаем пары из правого сына в левого
+    for (int i(T); i < 2 * T - 1; i++) {
+      temp_key = GetKey(rightChild, i - T);
+      temp_val = GetValue(rightChild, i - T);
+      SetKeyValue(leftChild, i, temp_key, temp_val);
+    }
+
+    // Перемещаем детей правого сына в левого сына
+    if (!leftChild->isLeaf) {
+      for (int i(0); i < rightChild->keyCount + 1; i++) {
+        SetChild(leftChild, i + T, GetChild(rightChild, i));
+      }
+    }
+    delete rightChild;
+    currNode->keyCount--;
+
+    // Сдвигаем ключи
+    for (int i(pos); i < currNode->keyCount; ++i) {
+      temp_key = GetKey(currNode, i + 1);
+      temp_val = GetValue(currNode, i + 1);
+      SetKeyValue(currNode, i, temp_key, temp_val);
+    }
+
+    // Сдвигаем детей
+    for (int i(pos + 1); i < currNode->keyCount + 1; ++i) {
+      SetChild(currNode, i, GetChild(currNode, i + 1));
+    }
+    leftChild->keyCount = 2 * T - 1;
+  }
+
+  static void TreeDeleteFromNode(Node *currNode, std::string &key) {
+    int idx(0);
+    while (idx < currNode->keyCount and key > GetKey(currNode, idx)) {
+      idx++;
+    }
+
+    if (idx < currNode->keyCount and GetKey(currNode, idx) == key) {
+      if (currNode->isLeaf) {
+        for (int i(idx + 1); i < currNode->keyCount; ++i) {
+          auto temp_key = GetKey(currNode, i);
+          auto temp_val = GetValue(currNode, i);
+          SetKeyValue(currNode, i - 1, temp_key, temp_val);
+        }
+        currNode->keyCount--;
+      } else {
+        StealFromChildren(currNode, idx);
+      }
+    } else {
+      if (GetChild(currNode, idx)->keyCount == T - 1) {
+        if (idx != 0 and GetChild(currNode, idx - 1)->keyCount > T - 1) {
+          PickFromLeftSon(currNode, idx);
+        } else if (idx != currNode->keyCount and GetChild(currNode, idx + 1)->keyCount > T - 1) {
+          PickFromRightSon(currNode, idx);
+        } else {
+          if (idx != currNode->keyCount) {
+            MergeChildsToFull(currNode, idx);
+          } else {
+            MergeChildsToFull(currNode, idx - 1);
+          }
+        }
+      }
+      if (idx > currNode->keyCount) {
+        TreeDeleteFromNode(GetChild(currNode, idx - 1), key);
+      } else {
+        TreeDeleteFromNode(GetChild(currNode, idx), key);
+      }
+    }
+  }
+
+  static void StealFromChildren(Node *currNode, int pos) {
+    auto key = GetKey(currNode, pos);
+    auto child = GetChild(currNode, pos);
+    auto right_child = GetChild(currNode, pos + 1);
+    uint64_t val;
+
+    if (child->keyCount > T - 1) {
+      auto maxKey = MaxKey(child);
+      PairInTree(currNode, maxKey, val);
+      SetKeyValue(currNode, pos, maxKey, val);
+      TreeDeleteFromNode(child, maxKey);
+    } else if (right_child->keyCount > T - 1) {
+      auto minKey = MinKey(right_child);
+      PairInTree(currNode, minKey, val);
+      SetKeyValue(currNode, pos, minKey, val);
+      TreeDeleteFromNode(GetChild(currNode, pos + 1), minKey);
+    } else {
+      MergeChildsToFull(currNode, pos);
+      TreeDeleteFromNode(GetChild(currNode, pos), key);
+    }
+  }
+
+  static void PickFromLeftSon(Node *currNode, int pos) {
+    Node *destination = GetChild(currNode, pos);
+    Node *sender = GetChild(currNode, pos - 1);
+
+    for (int i(destination->keyCount); i >= 1; --i) {
+      auto temp_key = GetKey(destination, i - 1);
+      auto temp_val = GetValue(destination, i - 1);
+      SetKeyValue(destination, i, temp_key, temp_val);
+    }
+    if (!destination->isLeaf) {
+      for (int i(destination->keyCount + 1); i >= 1; --i) {
+        SetChild(destination, i, GetChild(destination, i - 1));
+      }
+    }
+
+    auto temp_key = GetKey(currNode, pos - 1);
+    auto temp_val = GetValue(currNode, pos - 1);
+    SetKeyValue(destination, 0, temp_key, temp_val);
+    if (!destination->isLeaf) {
+      SetChild(destination, 0, GetChild(sender, sender->keyCount));
+    }
+
+    temp_key = GetKey(sender, sender->keyCount - 1);
+    temp_val = GetValue(sender, sender->keyCount - 1);
+    SetKeyValue(currNode, pos - 1, temp_key, temp_val);
+
+    destination->keyCount += 1;
+    sender->keyCount -= 1;
+  }
+
+  static void PickFromRightSon(Node *currNode, int pos) {
+    Node *destination = GetChild(currNode, pos);
+    Node *sender = GetChild(currNode, pos + 1);
+
+    auto temp_key = GetKey(currNode, pos);
+    auto temp_val = GetValue(currNode, pos);
+
+    SetKeyValue(destination, destination->keyCount, temp_key, temp_val);
+
+    if (!destination->isLeaf) {
+      SetChild(destination, destination->keyCount + 1, GetChild(sender, 0));
+    }
+
+    temp_key = GetKey(sender, 0);
+    temp_val = GetValue(sender, 0);
+    SetKeyValue(currNode, pos, temp_key, temp_val);
+
+    for (int i = 0; i < sender->keyCount - 1; i++) {
+      temp_key = GetKey(sender, i + 1);
+      temp_val = GetValue(sender, i + 1);
+      SetKeyValue(sender, i, temp_key, temp_val);
+    }
+    if (!sender->isLeaf) {
+      for (int i = 0; i < sender->keyCount + 1; i++) {
+        SetChild(sender, i, GetChild(sender, i + 1));
+      }
+    }
+
+    sender->keyCount -= 1;
+    destination->keyCount += 1;
+  }
+
+  static void TreeInsertNonFullNode(Node *currNode, std::string &key, uint64_t &value) {
+    int idx = currNode->keyCount - 1;
+
+    if (currNode->isLeaf) {
+      while (idx >= 0 and GetKey(currNode, idx) > key) {
+        auto &temp_key = GetKey(currNode, idx);
+        auto temp_val = GetValue(currNode, idx);
+        SetKeyValue(currNode, idx + 1, temp_key, temp_val);
+        idx -= 1;
+      }
+
+      SetKeyValue(currNode, idx + 1, key, value);
+      currNode->keyCount += 1;
+    } else {
+      while (idx >= 0 and GetKey(currNode, idx) > key) {
+        idx -= 1;
+      }
+
+      idx += 1;
+      if (NodeIsFull(GetChild(currNode, idx))) {
+        BTreeSplitChild(currNode, idx);
+        if (key > GetKey(currNode, idx)) {
+          idx += 1;
+        }
+      }
+
+      TreeInsertNonFullNode(GetChild(currNode, idx), key, value);
+    }
+  }
+
+ public:
+  Node *root;
+
+  Btree() {
+    Node *newNode = new Node;
+    newNode->isLeaf = true;
+    this->root = newNode;
+  }
+
+  // Check if the key in Tree
+  static bool PairInTree(Node *currNode, std::string &key, uint64_t &val) {
+    if (currNode == nullptr) {
+      return false;
+    } else if (currNode->isLeaf) {
+      for (int i(0); i < currNode->keyCount; ++i) {
+        if (key == GetKey(currNode, i)) {
+          val = GetValue(currNode, i);
+          return true;
+        }
+      }
+      return false;
+    } else {
+      if (GetKey(currNode, 0) > key) {
+        return PairInTree(GetChild(currNode, 0), key, val);
+
+      } else if (key > GetKey(currNode, currNode->keyCount - 1)) {
+        return PairInTree(GetChild(currNode, currNode->keyCount), key, val);
+
+      } else {
+        for (int i = 0; i < currNode->keyCount; i++) {
+          if (key == GetKey(currNode, i)) {
+            val = GetValue(currNode, i);
+            return true;
+          }
+          if (currNode->keyCount > 1 and key > GetKey(currNode, i) and GetKey(currNode, i + 1) > key) {
+            return PairInTree(GetChild(currNode, i + 1), key, val);
+          }
+        }
+      }
+    }
+    return false;
+  }
+
+  static void BTreeSplitChild(Node *parent, int child_idx) {
+    Node *leftChild = GetChild(parent, child_idx);
+    Node *rightChild = new Node;
+
+    rightChild->isLeaf = leftChild->isLeaf;
+    rightChild->keyCount = T - 1;
+    leftChild->keyCount = T - 1;
+
+    // Перемещаем T - 1 ключ в правого ребёнка
+    for (int i(T); i < 2 * T - 1; ++i) {
+      auto &key = GetKey(leftChild, i);
+      auto val = GetValue(leftChild, i);
+      SetKeyValue(rightChild, i - T, key, val);
+    }
+
+    if (!leftChild->isLeaf) {
+      for (int i(T); i < 2 * T; ++i) {
+        SetChild(rightChild, i - T, GetChild(leftChild, i));
+      }
+    }
+
+    parent->keyCount += 1;
+    // Добавление ребёнка к родителю
+    for (int i(parent->keyCount); i > child_idx; --i) {
+      SetChild(parent, i, GetChild(parent, i - 1));
+    }
+    SetChild(parent, child_idx + 1, rightChild);
+
+    // Добавление нового ключа родителю
+    for (int i(parent->keyCount - 1); i > child_idx; --i) {
+      auto &key = GetKey(parent, i - 1);
+      auto value = GetValue(parent, i - 1);
+      SetKeyValue(parent, i, key, value);
+    }
+    auto &key = GetKey(leftChild, T - 1);
+    auto value = GetValue(leftChild, T - 1);
+    SetKeyValue(parent, child_idx, key, value);
+  }
+
+  static void TreeInsert(Btree *&tree, std::string &&key, uint64_t &value) {
+    if (tree->root == nullptr) {
+      tree = new Btree();
+    }
+    Node *node = tree->root;
+    if (!NodeIsFull(node)) {
+      TreeInsertNonFullNode(node, key, value);
+    } else {
+      Node *newRoot = new Node;
+      newRoot->isLeaf = false;
+      SetChild(newRoot, 0, node);
+      tree->root = newRoot;
+      BTreeSplitChild(tree->root, 0);
+      TreeInsertNonFullNode(tree->root, key, value);
+    }
+  }
+
+  static void Save(Node *currNode, std::ofstream &stream) {
+    if (currNode != nullptr) {
+      for (int i = 0; i < currNode->keyCount; i++) {
+        uint64_t val = GetValue(currNode, i);
+        stream.write((char *) &val, sizeof(uint64_t));
+        int strSize = currNode->keys[i].size();
+        stream.write((char *) &strSize, sizeof(strSize));
+        stream.write(GetKey(currNode, i).c_str(), sizeof(char) * strSize);
+      }
+      if (!currNode->isLeaf) {
+        for (int i = 0; i <= currNode->keyCount; i++) {
+          Save(GetChild(currNode, i), stream);
+        }
+      }
+    }
+  }
+
+  static void Load(Btree *tree, std::ifstream &stream) {
+    uint64_t val;
+    int strSize;
+    while (stream.read((char *) &val, sizeof(uint64_t))) {
+      std::string key;
+      stream.read((char *) &strSize, sizeof(strSize));
+      key.resize(strSize);
+      stream.read((char *) key.data(), strSize);
+      TreeInsert(tree, std::move(key), val);
+    }
+  }
+
+  static void ClearTree(Btree *tree, std::string &key) {
+    if (tree->root != nullptr) {
+      TreeDeleteFromNode(tree->root, key);
+      if (tree->root->keyCount == 0) {
+        if (tree->root->isLeaf) {
+          delete tree->root;
+          tree->root = nullptr;
+        } else {
+          Node *newRoot = GetChild(tree->root, 0);
+          delete tree->root;
+          tree->root = newRoot;
+        }
+      }
+    }
+  }
+
+  static void Destroy(Node *tree) {
+    if (tree != nullptr) {
+      if (!tree->isLeaf) {
+        for (int i = 0; i <= tree->keyCount; i++) {
+          Destroy(GetChild(tree, i));
+        }
+      }
+      delete tree;
+    }
+  }
+};
+
+void Parser(Btree *&tree) {
+  std::string command;
+  while (std::cin >> command) {
+    if (command == "+") {
+      std::string key;
+      uint64_t value, res;
+      std::cin >> key >> value;
+      std::transform(key.begin(), key.end(), key.begin(), ::tolower);
+
+      if (Btree::PairInTree(tree->root, key, res)) {
+        std::cout << "Exist\n";
+      } else {
+        Btree::TreeInsert(tree, std::move(key), value);
+        std::cout << "OK\n";
+      }
+    } else if (command == "-") {
+      std::string key;
+      std::cin >> key;
+      std::transform(key.begin(), key.end(), key.begin(), ::tolower);
+      uint64_t res;
+      if (!Btree::PairInTree(tree->root, key, res)) {
+        std::cout << "NoSuchWord\n";
+      } else {
+        Btree::ClearTree(tree, key);
+        std::cout << "OK\n";
+      }
+    } else if (command == "!") {
+      std::string cmd, path;
+      std::cin >> cmd;
+      if (cmd == "Save") {
+        std::cin >> path;
+        std::ofstream ostream(path);
+        Btree::Save(tree->root, ostream);
+        ostream.close();
+        std::cout << "OK\n";
+      } else if (cmd == "Load") {
+        std::cin >> path;
+        std::ifstream istream(path);
+        Btree::Destroy(tree->root);
+        tree = new Btree();
+        Btree::Load(tree, istream);
+        istream.close();
+        std::cout << "OK\n";
+      } else {
+        std::cout << "ERROR\n";
+      }
+    } else {
+      std::transform(command.begin(), command.end(), command.begin(), ::tolower);
+      uint64_t val;
+      if (!Btree::PairInTree(tree->root, command, val)) {
+        std::cout << "NoSuchWord\n";
+      } else {
+        std::cout << "OK: " << val << "\n";
+      }
+    }
+  }
+}
+
+int main() {
+  std::ios_base::sync_with_stdio(false);
+  std::cin.tie(nullptr);
+  auto *tree = new Btree();
+  Parser(tree);
+  Btree::Destroy(tree->root);
+  delete tree;
+  return 0;
+}
