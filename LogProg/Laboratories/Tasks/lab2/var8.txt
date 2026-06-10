@@ -1,0 +1,54 @@
+/*
+Борисов, Кириллов, Данин и Савин инженеры. Один из них автомеханик, другой химик, 
+третий строитель, четвертый радиотехник. Борисов, который обыгрывает в шахматы Данина, 
+но проигрывает Савину, бегает на лыжах лучше того инженера, который моложе его,
+и ходит в театр чаще, чем тот инженер, который старше Кириллова. Химик, который
+посещает театр чаще, чем автомеханик, но реже, чем строитель, не является ни 
+самым молодым, ни самым старшим из этой четверки. Строитель, который на лыжах 
+бегает хуже, чем радиотехник, как правило, проигрывает в шахматных сражениях автомеханику. 
+Самый пожилой из инженеров лучше всех играет в шахматы и чаще всех бывает в театре, 
+а самый молодой лучше всех ходит на лыжах. Назовите профессии каждого из инженеров, 
+если известно, что ни в спорте, ни в приверженности к театру среди нет двух одинаковых.
+*/
+
+prof('avtomehanic').
+prof('himik').
+prof('stroitel').
+prof('radiotehnik').
+
+is_better_chess(Win, Lose).
+better_ski(Better, Worse).
+younger(Young, Old).
+more_theatre(More, Less).
+
+
+solve([Borisov, Kirillov, Danin, Savin]):-
+    prof(P1),
+    Borisov = prof(P1),
+    
+    prof(P2),
+    P2 @< P1,
+    Kirillov = prof(P2),
+
+    prof(P3),
+    P3 @< P1, P3 @< P2,
+    Danin = prof(P3),
+
+    prof(P4),
+    P4 @< P3, P4 @< P2, P4 @< P1,
+    Savin = prof(P4),
+
+    is_better_chess(Borisov, Danin),
+    is_better_chess(Savin, Borisov),
+    better_ski(Borisov, X),
+    younger(X, Borisov),
+    more_theatre(Borisov, Y),
+    younger(Kirillov, Y),
+    more_theatre(prof('himik'), prof('avtomehanic')),
+    more_theatre(prof('stroitel'), prof('himik')),
+    (younger(prof('himik'), _), younger(_, prof('himik'))),
+    better_ski(prof('radiotehnik'), prof('stroitel')),
+    is_better_chess(prof('avtomehanic'), prof('stroitel')),
+    is_better_chess(younger(_, (prof('himik'); prof('avtomehanic'); prof('stroitel'); prof('radiotehnik'))), _),
+    more_theatre(younger(_, prof('himik'); prof('avtomehanic'); prof('stroitel'); prof('radiotehnik')), _),
+    better_ski(younger(prof('himik'); prof('avtomehanic'); prof('stroitel'); prof('radiotehnik'), _), _).

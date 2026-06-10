@@ -1,0 +1,13 @@
+% 1: Вычисление суммы элементов
+    % рекурсия
+    sum([], 0).
+    sum([X|T], R) :-
+        sum(T, R1),
+        R is R1 + X.
+    % другая версия рекурсии
+    sumstd(L,R) :-
+        sumstd(L,0,R).
+    sumstd([],F,F).
+    sumstd([H|T],F,R) :-
+        F2 is F+H,
+        sumstd(T,F2,R).

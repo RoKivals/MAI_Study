@@ -1,0 +1,84 @@
+true(river_volga).
+true(pupil_vasya).
+true(true).
+
+
+calculate(List,Res):-
+	solver(List,[Res]).
+
+solver(['(',true,')'|T],Res):-
+	solver([true|T],Res).
+solver(['(',false,')'|T],[false|T]):-
+	solver([false|T],Res).
+
+solver([A,'&',B | T], Res):-
+	true(A),
+	true(B),
+	check(A),
+	check(B),
+	solver([true|T],Res),
+	!.
+
+solver([A,'&',B | T], Res):-
+	check(A),
+	check(B),
+	solver([false|T],Res).
+
+solver([A,'=>',B | T], Res):-
+	(not(true(A));true(B)),
+	check(A),
+	check(B),
+	solver([true|T],Res),
+	!.
+
+solver([A,'=>',B | T], Res):-
+	check(A),
+	check(B),
+	solver([false|T],Res).
+
+solver(['~',B | T], Res):-
+	true(B),
+	check(B),
+	solver([false|T],Res),
+	!.
+
+solver(['~',B | T], Res):-
+	check(B),
+	solver([true|T],Res).
+
+solver([A,'&',B | T], Res):-
+	check(A),
+	check(B),
+	solver([false|T],Res).
+
+solver([A,'V',B | T], Res):-
+	(true(A);true(B)),
+	check(A),
+	check(B),
+	solver([true|T],Res),
+	!.
+
+solver([A,'V',B | T], Res):-
+	check(A),
+	check(B),
+	solver([false|T],Res).
+
+solver([A|[B|T]],Res):-
+	% so the tail has to be non empty
+	solver([B|T],Y),
+	% solver can not complete args
+	[B|T] \= Y,
+	solver([A|Y],Res),!.
+
+solver(X,X).
+
+check(X):-
+	X \= '(',
+	X \= ')',
+	X \= '~',
+	X \= 'V',
+	X \= '&',
+	X \= '=>'.
+
+
+%% solver([true,'&','(','river_volga','&',true,')'],RES).
