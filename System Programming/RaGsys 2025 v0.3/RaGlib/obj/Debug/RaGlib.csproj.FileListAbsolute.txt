@@ -1,0 +1,42 @@
+C:\Users\stud\Desktop\Proba\RaGsys\RaGlib\bin\Debug\RaGlib.dll
+C:\Users\stud\Desktop\Proba\RaGsys\RaGlib\bin\Debug\RaGlib.pdb
+C:\Users\stud\Desktop\Proba\RaGsys\RaGlib\obj\Debug\RaGlib.csproj.AssemblyReference.cache
+C:\Users\stud\Desktop\Proba\RaGsys\RaGlib\obj\Debug\RaGlib.csproj.CoreCompileInputs.cache
+C:\Users\stud\Desktop\Proba\RaGsys\RaGlib\obj\Debug\RaGlib.dll
+C:\Users\stud\Desktop\Proba\RaGsys\RaGlib\obj\Debug\RaGlib.pdb
+F:\MYLIBRARY\0. Courses\Course_Compiler\Rag System New Progect\RaGsys\RaGlib\obj\Debug\RaGlib.csproj.AssemblyReference.cache
+F:\MYLIBRARY\0. Courses\Course_Compiler\Rag System New Progect\RaGsys\RaGlib\obj\Debug\RaGlib.csproj.CoreCompileInputs.cache
+F:\MYLIBRARY\0. Courses\Course_Compiler\Rag System New Progect\RaGsys\RaGlib\obj\Debug\RaGlib.dll
+F:\MYLIBRARY\0. Courses\Course_Compiler\Rag System New Progect\RaGsys\RaGlib\obj\Debug\RaGlib.pdb
+F:\MYLIBRARY\0. Courses\Course_Compiler\Rag System New Progect\RaGsys\RaGlib\bin\Debug\RaGlib.dll
+F:\MYLIBRARY\0. Courses\Course_Compiler\Rag System New Progect\RaGsys\RaGlib\bin\Debug\RaGlib.pdb
+C:\Users\vzasl\Desktop\RaGsys 2024 v0.1\RaGlib\bin\Debug\RaGlib.dll
+C:\Users\vzasl\Desktop\RaGsys 2024 v0.1\RaGlib\bin\Debug\RaGlib.pdb
+C:\Users\vzasl\Desktop\RaGsys 2024 v0.1\RaGlib\obj\Debug\RaGlib.csproj.AssemblyReference.cache
+C:\Users\vzasl\Desktop\RaGsys 2024 v0.1\RaGlib\obj\Debug\RaGlib.csproj.CoreCompileInputs.cache
+C:\Users\vzasl\Desktop\RaGsys 2024 v0.1\RaGlib\obj\Debug\RaGlib.dll
+C:\Users\vzasl\Desktop\RaGsys 2024 v0.1\RaGlib\obj\Debug\RaGlib.pdb
+E:\KR AVTOMAT\RaGsys 2025 v0.2\RaGlib\bin\Debug\RaGlib.dll
+E:\KR AVTOMAT\RaGsys 2025 v0.2\RaGlib\bin\Debug\RaGlib.pdb
+E:\KR AVTOMAT\RaGsys 2025 v0.2\RaGlib\obj\Debug\RaGlib.csproj.AssemblyReference.cache
+E:\KR AVTOMAT\RaGsys 2025 v0.2\RaGlib\obj\Debug\RaGlib.csproj.CoreCompileInputs.cache
+E:\KR AVTOMAT\RaGsys 2025 v0.2\RaGlib\obj\Debug\RaGlib.dll
+E:\KR AVTOMAT\RaGsys 2025 v0.2\RaGlib\obj\Debug\RaGlib.pdb
+C:\Users\yashelter\Desktop\RaGsys 2025 v0.2\RaGlib\bin\Debug\RaGlib.dll
+C:\Users\yashelter\Desktop\RaGsys 2025 v0.2\RaGlib\bin\Debug\RaGlib.pdb
+C:\Users\yashelter\Desktop\RaGsys 2025 v0.2\RaGlib\obj\Debug\RaGlib.csproj.AssemblyReference.cache
+C:\Users\yashelter\Desktop\RaGsys 2025 v0.2\RaGlib\obj\Debug\RaGlib.csproj.CoreCompileInputs.cache
+C:\Users\yashelter\Desktop\RaGsys 2025 v0.2\RaGlib\obj\Debug\RaGlib.dll
+C:\Users\yashelter\Desktop\RaGsys 2025 v0.2\RaGlib\obj\Debug\RaGlib.pdb
+C:\Users\stud\Desktop\NL-2025\RaGsys 2025 v0.21\RaGlib\bin\Debug\RaGlib.dll
+C:\Users\stud\Desktop\NL-2025\RaGsys 2025 v0.21\RaGlib\bin\Debug\RaGlib.pdb
+C:\Users\stud\Desktop\NL-2025\RaGsys 2025 v0.21\RaGlib\obj\Debug\RaGlib.csproj.AssemblyReference.cache
+C:\Users\stud\Desktop\NL-2025\RaGsys 2025 v0.21\RaGlib\obj\Debug\RaGlib.csproj.CoreCompileInputs.cache
+C:\Users\stud\Desktop\NL-2025\RaGsys 2025 v0.21\RaGlib\obj\Debug\RaGlib.dll
+C:\Users\stud\Desktop\NL-2025\RaGsys 2025 v0.21\RaGlib\obj\Debug\RaGlib.pdb
+C:\Users\stud\Desktop\NL-2025\RaGsys 2025 v0.3\RaGlib\bin\Debug\RaGlib.dll
+C:\Users\stud\Desktop\NL-2025\RaGsys 2025 v0.3\RaGlib\bin\Debug\RaGlib.pdb
+C:\Users\stud\Desktop\NL-2025\RaGsys 2025 v0.3\RaGlib\obj\Debug\RaGlib.csproj.AssemblyReference.cache
+C:\Users\stud\Desktop\NL-2025\RaGsys 2025 v0.3\RaGlib\obj\Debug\RaGlib.csproj.CoreCompileInputs.cache
+C:\Users\stud\Desktop\NL-2025\RaGsys 2025 v0.3\RaGlib\obj\Debug\RaGlib.dll
+C:\Users\stud\Desktop\NL-2025\RaGsys 2025 v0.3\RaGlib\obj\Debug\RaGlib.pdb

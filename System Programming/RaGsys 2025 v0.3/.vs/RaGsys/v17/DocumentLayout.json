@@ -1,0 +1,563 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\KR AVTOMAT\\RaGsys 2025 v0.2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8E02F40B-0F0C-40DC-B358-0C86CCFF629B}|RaGlib\\RaGlib.csproj|E:\\KR AVTOMAT\\RaGsys 2025 v0.2\\raglib\\mysdtschemata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E02F40B-0F0C-40DC-B358-0C86CCFF629B}|RaGlib\\RaGlib.csproj|solutionrelative:raglib\\mysdtschemata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E02F40B-0F0C-40DC-B358-0C86CCFF629B}|RaGlib\\RaGlib.csproj|E:\\KR AVTOMAT\\RaGsys 2025 v0.2\\raglib\\utility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E02F40B-0F0C-40DC-B358-0C86CCFF629B}|RaGlib\\RaGlib.csproj|solutionrelative:raglib\\utility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E02F40B-0F0C-40DC-B358-0C86CCFF629B}|RaGlib\\RaGlib.csproj|E:\\KR AVTOMAT\\RaGsys 2025 v0.2\\raglib\\transgrammar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E02F40B-0F0C-40DC-B358-0C86CCFF629B}|RaGlib\\RaGlib.csproj|solutionrelative:raglib\\transgrammar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E02F40B-0F0C-40DC-B358-0C86CCFF629B}|RaGlib\\RaGlib.csproj|E:\\KR AVTOMAT\\RaGsys 2025 v0.2\\raglib\\slrparser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E02F40B-0F0C-40DC-B358-0C86CCFF629B}|RaGlib\\RaGlib.csproj|solutionrelative:raglib\\slrparser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E02F40B-0F0C-40DC-B358-0C86CCFF629B}|RaGlib\\RaGlib.csproj|E:\\KR AVTOMAT\\RaGsys 2025 v0.2\\raglib\\sdtranslation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E02F40B-0F0C-40DC-B358-0C86CCFF629B}|RaGlib\\RaGlib.csproj|solutionrelative:raglib\\sdtranslation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E02F40B-0F0C-40DC-B358-0C86CCFF629B}|RaGlib\\RaGlib.csproj|E:\\KR AVTOMAT\\RaGsys 2025 v0.2\\raglib\\sdtbuilder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E02F40B-0F0C-40DC-B358-0C86CCFF629B}|RaGlib\\RaGlib.csproj|solutionrelative:raglib\\sdtbuilder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E02F40B-0F0C-40DC-B358-0C86CCFF629B}|RaGlib\\RaGlib.csproj|E:\\KR AVTOMAT\\RaGsys 2025 v0.2\\raglib\\pumping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E02F40B-0F0C-40DC-B358-0C86CCFF629B}|RaGlib\\RaGlib.csproj|solutionrelative:raglib\\pumping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E02F40B-0F0C-40DC-B358-0C86CCFF629B}|RaGlib\\RaGlib.csproj|E:\\KR AVTOMAT\\RaGsys 2025 v0.2\\raglib\\pda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E02F40B-0F0C-40DC-B358-0C86CCFF629B}|RaGlib\\RaGlib.csproj|solutionrelative:raglib\\pda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E02F40B-0F0C-40DC-B358-0C86CCFF629B}|RaGlib\\RaGlib.csproj|E:\\KR AVTOMAT\\RaGsys 2025 v0.2\\raglib\\parsetree.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E02F40B-0F0C-40DC-B358-0C86CCFF629B}|RaGlib\\RaGlib.csproj|solutionrelative:raglib\\parsetree.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E02F40B-0F0C-40DC-B358-0C86CCFF629B}|RaGlib\\RaGlib.csproj|E:\\KR AVTOMAT\\RaGsys 2025 v0.2\\raglib\\mylrparser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E02F40B-0F0C-40DC-B358-0C86CCFF629B}|RaGlib\\RaGlib.csproj|solutionrelative:raglib\\mylrparser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E02F40B-0F0C-40DC-B358-0C86CCFF629B}|RaGlib\\RaGlib.csproj|E:\\KR AVTOMAT\\RaGsys 2025 v0.2\\raglib\\myhtable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E02F40B-0F0C-40DC-B358-0C86CCFF629B}|RaGlib\\RaGlib.csproj|solutionrelative:raglib\\myhtable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E02F40B-0F0C-40DC-B358-0C86CCFF629B}|RaGlib\\RaGlib.csproj|E:\\KR AVTOMAT\\RaGsys 2025 v0.2\\raglib\\mycompiler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E02F40B-0F0C-40DC-B358-0C86CCFF629B}|RaGlib\\RaGlib.csproj|solutionrelative:raglib\\mycompiler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E02F40B-0F0C-40DC-B358-0C86CCFF629B}|RaGlib\\RaGlib.csproj|E:\\KR AVTOMAT\\RaGsys 2025 v0.2\\raglib\\lrparser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E02F40B-0F0C-40DC-B358-0C86CCFF629B}|RaGlib\\RaGlib.csproj|solutionrelative:raglib\\lrparser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E02F40B-0F0C-40DC-B358-0C86CCFF629B}|RaGlib\\RaGlib.csproj|E:\\KR AVTOMAT\\RaGsys 2025 v0.2\\raglib\\llparser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E02F40B-0F0C-40DC-B358-0C86CCFF629B}|RaGlib\\RaGlib.csproj|solutionrelative:raglib\\llparser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E02F40B-0F0C-40DC-B358-0C86CCFF629B}|RaGlib\\RaGlib.csproj|E:\\KR AVTOMAT\\RaGsys 2025 v0.2\\raglib\\lexer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E02F40B-0F0C-40DC-B358-0C86CCFF629B}|RaGlib\\RaGlib.csproj|solutionrelative:raglib\\lexer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E02F40B-0F0C-40DC-B358-0C86CCFF629B}|RaGlib\\RaGlib.csproj|E:\\KR AVTOMAT\\RaGsys 2025 v0.2\\raglib\\grammarwithopsymbol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E02F40B-0F0C-40DC-B358-0C86CCFF629B}|RaGlib\\RaGlib.csproj|solutionrelative:raglib\\grammarwithopsymbol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E02F40B-0F0C-40DC-B358-0C86CCFF629B}|RaGlib\\RaGlib.csproj|E:\\KR AVTOMAT\\RaGsys 2025 v0.2\\raglib\\grammar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E02F40B-0F0C-40DC-B358-0C86CCFF629B}|RaGlib\\RaGlib.csproj|solutionrelative:raglib\\grammar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E02F40B-0F0C-40DC-B358-0C86CCFF629B}|RaGlib\\RaGlib.csproj|E:\\KR AVTOMAT\\RaGsys 2025 v0.2\\raglib\\fsautomate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E02F40B-0F0C-40DC-B358-0C86CCFF629B}|RaGlib\\RaGlib.csproj|solutionrelative:raglib\\fsautomate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E02F40B-0F0C-40DC-B358-0C86CCFF629B}|RaGlib\\RaGlib.csproj|E:\\KR AVTOMAT\\RaGsys 2025 v0.2\\raglib\\edpda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E02F40B-0F0C-40DC-B358-0C86CCFF629B}|RaGlib\\RaGlib.csproj|solutionrelative:raglib\\edpda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E02F40B-0F0C-40DC-B358-0C86CCFF629B}|RaGlib\\RaGlib.csproj|E:\\KR AVTOMAT\\RaGsys 2025 v0.2\\raglib\\dpda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E02F40B-0F0C-40DC-B358-0C86CCFF629B}|RaGlib\\RaGlib.csproj|solutionrelative:raglib\\dpda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E02F40B-0F0C-40DC-B358-0C86CCFF629B}|RaGlib\\RaGlib.csproj|E:\\KR AVTOMAT\\RaGsys 2025 v0.2\\raglib\\cpda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E02F40B-0F0C-40DC-B358-0C86CCFF629B}|RaGlib\\RaGlib.csproj|solutionrelative:raglib\\cpda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E02F40B-0F0C-40DC-B358-0C86CCFF629B}|RaGlib\\RaGlib.csproj|E:\\KR AVTOMAT\\RaGsys 2025 v0.2\\raglib\\compound_fsautomate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E02F40B-0F0C-40DC-B358-0C86CCFF629B}|RaGlib\\RaGlib.csproj|solutionrelative:raglib\\compound_fsautomate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E02F40B-0F0C-40DC-B358-0C86CCFF629B}|RaGlib\\RaGlib.csproj|E:\\KR AVTOMAT\\RaGsys 2025 v0.2\\raglib\\automatewithopsymbols.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E02F40B-0F0C-40DC-B358-0C86CCFF629B}|RaGlib\\RaGlib.csproj|solutionrelative:raglib\\automatewithopsymbols.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E02F40B-0F0C-40DC-B358-0C86CCFF629B}|RaGlib\\RaGlib.csproj|E:\\KR AVTOMAT\\RaGsys 2025 v0.2\\raglib\\atscheme.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E02F40B-0F0C-40DC-B358-0C86CCFF629B}|RaGlib\\RaGlib.csproj|solutionrelative:raglib\\atscheme.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8CB67BDF-CDF7-4CBF-8888-966160285C8C}|RaGsys\\RaGsys.csproj|e:\\kr avtomat\\ragsys 2025 v0.2\\ragsys\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8CB67BDF-CDF7-4CBF-8888-966160285C8C}|RaGsys\\RaGsys.csproj|solutionrelative:ragsys\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E02F40B-0F0C-40DC-B358-0C86CCFF629B}|RaGlib\\RaGlib.csproj|E:\\KR AVTOMAT\\RaGsys 2025 v0.2\\raglib\\setl\\datavariableset.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E02F40B-0F0C-40DC-B358-0C86CCFF629B}|RaGlib\\RaGlib.csproj|solutionrelative:raglib\\setl\\datavariableset.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E02F40B-0F0C-40DC-B358-0C86CCFF629B}|RaGlib\\RaGlib.csproj|E:\\KR AVTOMAT\\RaGsys 2025 v0.2\\raglib\\setl\\datachains.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E02F40B-0F0C-40DC-B358-0C86CCFF629B}|RaGlib\\RaGlib.csproj|solutionrelative:raglib\\setl\\datachains.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E02F40B-0F0C-40DC-B358-0C86CCFF629B}|RaGlib\\RaGlib.csproj|E:\\KR AVTOMAT\\RaGsys 2025 v0.2\\raglib\\setl\\datachain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E02F40B-0F0C-40DC-B358-0C86CCFF629B}|RaGlib\\RaGlib.csproj|solutionrelative:raglib\\setl\\datachain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E02F40B-0F0C-40DC-B358-0C86CCFF629B}|RaGlib\\RaGlib.csproj|E:\\KR AVTOMAT\\RaGsys 2025 v0.2\\raglib\\setl\\datasymbol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E02F40B-0F0C-40DC-B358-0C86CCFF629B}|RaGlib\\RaGlib.csproj|solutionrelative:raglib\\setl\\datasymbol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E02F40B-0F0C-40DC-B358-0C86CCFF629B}|RaGlib\\RaGlib.csproj|E:\\KR AVTOMAT\\RaGsys 2025 v0.2\\raglib\\setl\\datanode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E02F40B-0F0C-40DC-B358-0C86CCFF629B}|RaGlib\\RaGlib.csproj|solutionrelative:raglib\\setl\\datanode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\stud\\Desktop\\Proba\\RaGsys\\RaGlib\\Class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E02F40B-0F0C-40DC-B358-0C86CCFF629B}|RaGlib\\RaGlib.csproj|E:\\KR AVTOMAT\\RaGsys 2025 v0.2\\raglib\\setl\\datasymbols.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E02F40B-0F0C-40DC-B358-0C86CCFF629B}|RaGlib\\RaGlib.csproj|solutionrelative:raglib\\setl\\datasymbols.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 13,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "DataSymbol.cs",
+              "DocumentMoniker": "E:\\KR AVTOMAT\\RaGsys 2025 v0.2\\RaGlib\\SetL\\DataSymbol.cs",
+              "RelativeDocumentMoniker": "RaGlib\\SetL\\DataSymbol.cs",
+              "ToolTip": "E:\\KR AVTOMAT\\RaGsys 2025 v0.2\\RaGlib\\SetL\\DataSymbol.cs",
+              "RelativeToolTip": "RaGlib\\SetL\\DataSymbol.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-09T06:37:12.32Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "DataVariableSet.cs",
+              "DocumentMoniker": "E:\\KR AVTOMAT\\RaGsys 2025 v0.2\\RaGlib\\SetL\\DataVariableSet.cs",
+              "RelativeDocumentMoniker": "RaGlib\\SetL\\DataVariableSet.cs",
+              "ToolTip": "E:\\KR AVTOMAT\\RaGsys 2025 v0.2\\RaGlib\\SetL\\DataVariableSet.cs",
+              "RelativeToolTip": "RaGlib\\SetL\\DataVariableSet.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAMwBAAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-09T05:43:07.405Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "DataSymbols.cs",
+              "DocumentMoniker": "E:\\KR AVTOMAT\\RaGsys 2025 v0.2\\RaGlib\\SetL\\DataSymbols.cs",
+              "RelativeDocumentMoniker": "RaGlib\\SetL\\DataSymbols.cs",
+              "ToolTip": "E:\\KR AVTOMAT\\RaGsys 2025 v0.2\\RaGlib\\SetL\\DataSymbols.cs",
+              "RelativeToolTip": "RaGlib\\SetL\\DataSymbols.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAWwA8AAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-09T05:43:07.407Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "DataNode.cs",
+              "DocumentMoniker": "E:\\KR AVTOMAT\\RaGsys 2025 v0.2\\RaGlib\\SetL\\DataNode.cs",
+              "RelativeDocumentMoniker": "RaGlib\\SetL\\DataNode.cs",
+              "ToolTip": "E:\\KR AVTOMAT\\RaGsys 2025 v0.2\\RaGlib\\SetL\\DataNode.cs",
+              "RelativeToolTip": "RaGlib\\SetL\\DataNode.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-09T06:28:41.164Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "FSAutomate.cs",
+              "DocumentMoniker": "E:\\KR AVTOMAT\\RaGsys 2025 v0.2\\RaGlib\\FSAutomate.cs",
+              "RelativeDocumentMoniker": "RaGlib\\FSAutomate.cs",
+              "ToolTip": "E:\\KR AVTOMAT\\RaGsys 2025 v0.2\\RaGlib\\FSAutomate.cs",
+              "RelativeToolTip": "RaGlib\\FSAutomate.cs",
+              "ViewState": "AgIAAGMAAAAAAAAAAAAuwHAAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-09T06:51:35.435Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "GrammarWithOpSymbol.cs",
+              "DocumentMoniker": "E:\\KR AVTOMAT\\RaGsys 2025 v0.2\\RaGlib\\GrammarWithOpSymbol.cs",
+              "RelativeDocumentMoniker": "RaGlib\\GrammarWithOpSymbol.cs",
+              "ToolTip": "E:\\KR AVTOMAT\\RaGsys 2025 v0.2\\RaGlib\\GrammarWithOpSymbol.cs",
+              "RelativeToolTip": "RaGlib\\GrammarWithOpSymbol.cs",
+              "ViewState": "AgIAAJsAAAAAAAAAAAAmwLcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-09T06:51:45.636Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Utility.cs",
+              "DocumentMoniker": "E:\\KR AVTOMAT\\RaGsys 2025 v0.2\\RaGlib\\Utility.cs",
+              "RelativeDocumentMoniker": "RaGlib\\Utility.cs",
+              "ToolTip": "E:\\KR AVTOMAT\\RaGsys 2025 v0.2\\RaGlib\\Utility.cs",
+              "RelativeToolTip": "RaGlib\\Utility.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T19:35:01.348Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "transGrammar.cs",
+              "DocumentMoniker": "E:\\KR AVTOMAT\\RaGsys 2025 v0.2\\RaGlib\\transGrammar.cs",
+              "RelativeDocumentMoniker": "RaGlib\\transGrammar.cs",
+              "ToolTip": "E:\\KR AVTOMAT\\RaGsys 2025 v0.2\\RaGlib\\transGrammar.cs",
+              "RelativeToolTip": "RaGlib\\transGrammar.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T19:34:57.894Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SLRParser.cs",
+              "DocumentMoniker": "E:\\KR AVTOMAT\\RaGsys 2025 v0.2\\RaGlib\\SLRParser.cs",
+              "RelativeDocumentMoniker": "RaGlib\\SLRParser.cs",
+              "ToolTip": "E:\\KR AVTOMAT\\RaGsys 2025 v0.2\\RaGlib\\SLRParser.cs",
+              "RelativeToolTip": "RaGlib\\SLRParser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T19:34:55.181Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SDTranslation.cs",
+              "DocumentMoniker": "E:\\KR AVTOMAT\\RaGsys 2025 v0.2\\RaGlib\\SDTranslation.cs",
+              "RelativeDocumentMoniker": "RaGlib\\SDTranslation.cs",
+              "ToolTip": "E:\\KR AVTOMAT\\RaGsys 2025 v0.2\\RaGlib\\SDTranslation.cs",
+              "RelativeToolTip": "RaGlib\\SDTranslation.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T19:34:52.054Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SDTBuilder.cs",
+              "DocumentMoniker": "E:\\KR AVTOMAT\\RaGsys 2025 v0.2\\RaGlib\\SDTBuilder.cs",
+              "RelativeDocumentMoniker": "RaGlib\\SDTBuilder.cs",
+              "ToolTip": "E:\\KR AVTOMAT\\RaGsys 2025 v0.2\\RaGlib\\SDTBuilder.cs",
+              "RelativeToolTip": "RaGlib\\SDTBuilder.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T19:34:50.876Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Pumping.cs",
+              "DocumentMoniker": "E:\\KR AVTOMAT\\RaGsys 2025 v0.2\\RaGlib\\Pumping.cs",
+              "RelativeDocumentMoniker": "RaGlib\\Pumping.cs",
+              "ToolTip": "E:\\KR AVTOMAT\\RaGsys 2025 v0.2\\RaGlib\\Pumping.cs",
+              "RelativeToolTip": "RaGlib\\Pumping.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T19:34:41.195Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "mySDTSchemata.cs",
+              "DocumentMoniker": "E:\\KR AVTOMAT\\RaGsys 2025 v0.2\\RaGlib\\mySDTSchemata.cs",
+              "RelativeDocumentMoniker": "RaGlib\\mySDTSchemata.cs",
+              "ToolTip": "E:\\KR AVTOMAT\\RaGsys 2025 v0.2\\RaGlib\\mySDTSchemata.cs",
+              "RelativeToolTip": "RaGlib\\mySDTSchemata.cs",
+              "ViewState": "AgIAAOsAAAAAAAAAAAAkwAUBAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T19:34:16.015Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "MyLRParser.cs",
+              "DocumentMoniker": "E:\\KR AVTOMAT\\RaGsys 2025 v0.2\\RaGlib\\MyLRParser.cs",
+              "RelativeDocumentMoniker": "RaGlib\\MyLRParser.cs",
+              "ToolTip": "E:\\KR AVTOMAT\\RaGsys 2025 v0.2\\RaGlib\\MyLRParser.cs",
+              "RelativeToolTip": "RaGlib\\MyLRParser.cs",
+              "ViewState": "AgIAAMcCAAAAAAAAAAAAAEcCAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T19:33:39.421Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "myHTable.cs",
+              "DocumentMoniker": "E:\\KR AVTOMAT\\RaGsys 2025 v0.2\\RaGlib\\myHTable.cs",
+              "RelativeDocumentMoniker": "RaGlib\\myHTable.cs",
+              "ToolTip": "E:\\KR AVTOMAT\\RaGsys 2025 v0.2\\RaGlib\\myHTable.cs",
+              "RelativeToolTip": "RaGlib\\myHTable.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAAuwEkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T19:32:15.314Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "myCompiler.cs",
+              "DocumentMoniker": "E:\\KR AVTOMAT\\RaGsys 2025 v0.2\\RaGlib\\myCompiler.cs",
+              "RelativeDocumentMoniker": "RaGlib\\myCompiler.cs",
+              "ToolTip": "E:\\KR AVTOMAT\\RaGsys 2025 v0.2\\RaGlib\\myCompiler.cs",
+              "RelativeToolTip": "RaGlib\\myCompiler.cs",
+              "ViewState": "AgIAABsBAAAAAAAAAAAqwCoBAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T19:30:45.349Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "LRParser.cs",
+              "DocumentMoniker": "E:\\KR AVTOMAT\\RaGsys 2025 v0.2\\RaGlib\\LRParser.cs",
+              "RelativeDocumentMoniker": "RaGlib\\LRParser.cs",
+              "ToolTip": "E:\\KR AVTOMAT\\RaGsys 2025 v0.2\\RaGlib\\LRParser.cs",
+              "RelativeToolTip": "RaGlib\\LRParser.cs",
+              "ViewState": "AgIAAAcCAAAAAAAAAAAAABwCAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T19:28:05.823Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "EDPDA.cs",
+              "DocumentMoniker": "E:\\KR AVTOMAT\\RaGsys 2025 v0.2\\RaGlib\\EDPDA.cs",
+              "RelativeDocumentMoniker": "RaGlib\\EDPDA.cs",
+              "ToolTip": "E:\\KR AVTOMAT\\RaGsys 2025 v0.2\\RaGlib\\EDPDA.cs",
+              "RelativeToolTip": "RaGlib\\EDPDA.cs",
+              "ViewState": "AgIAAMQAAAAAAAAAAAAuwOEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T19:23:21.508Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "DPDA.cs",
+              "DocumentMoniker": "E:\\KR AVTOMAT\\RaGsys 2025 v0.2\\RaGlib\\DPDA.cs",
+              "RelativeDocumentMoniker": "RaGlib\\DPDA.cs",
+              "ToolTip": "E:\\KR AVTOMAT\\RaGsys 2025 v0.2\\RaGlib\\DPDA.cs",
+              "RelativeToolTip": "RaGlib\\DPDA.cs",
+              "ViewState": "AgIAANQAAAAAAAAAAAAmwPAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T19:19:33.687Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "CPDA.cs",
+              "DocumentMoniker": "E:\\KR AVTOMAT\\RaGsys 2025 v0.2\\RaGlib\\CPDA.cs",
+              "RelativeDocumentMoniker": "RaGlib\\CPDA.cs",
+              "ToolTip": "E:\\KR AVTOMAT\\RaGsys 2025 v0.2\\RaGlib\\CPDA.cs",
+              "RelativeToolTip": "RaGlib\\CPDA.cs",
+              "ViewState": "AgIAAFIAAAAAAAAAAAAmwG4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T19:19:28.2Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Compound_FSAutomate.cs",
+              "DocumentMoniker": "E:\\KR AVTOMAT\\RaGsys 2025 v0.2\\RaGlib\\Compound_FSAutomate.cs",
+              "RelativeDocumentMoniker": "RaGlib\\Compound_FSAutomate.cs",
+              "ToolTip": "E:\\KR AVTOMAT\\RaGsys 2025 v0.2\\RaGlib\\Compound_FSAutomate.cs",
+              "RelativeToolTip": "RaGlib\\Compound_FSAutomate.cs",
+              "ViewState": "AgIAAGAAAAAAAAAAAAAmwHwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T19:15:20.972Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "AutomateWithOpSymbols.cs",
+              "DocumentMoniker": "E:\\KR AVTOMAT\\RaGsys 2025 v0.2\\RaGlib\\AutomateWithOpSymbols.cs",
+              "RelativeDocumentMoniker": "RaGlib\\AutomateWithOpSymbols.cs",
+              "ToolTip": "E:\\KR AVTOMAT\\RaGsys 2025 v0.2\\RaGlib\\AutomateWithOpSymbols.cs",
+              "RelativeToolTip": "RaGlib\\AutomateWithOpSymbols.cs",
+              "ViewState": "AgIAAGAAAAAAAAAAAAAAwH0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T19:06:34.543Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "ATScheme.cs",
+              "DocumentMoniker": "E:\\KR AVTOMAT\\RaGsys 2025 v0.2\\RaGlib\\ATScheme.cs",
+              "RelativeDocumentMoniker": "RaGlib\\ATScheme.cs",
+              "ToolTip": "E:\\KR AVTOMAT\\RaGsys 2025 v0.2\\RaGlib\\ATScheme.cs",
+              "RelativeToolTip": "RaGlib\\ATScheme.cs",
+              "ViewState": "AgIAAHUBAAAAAAAAAAAAwJIBAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T19:06:29.213Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "LLParser.cs",
+              "DocumentMoniker": "E:\\KR AVTOMAT\\RaGsys 2025 v0.2\\RaGlib\\LLParser.cs",
+              "RelativeDocumentMoniker": "RaGlib\\LLParser.cs",
+              "ToolTip": "E:\\KR AVTOMAT\\RaGsys 2025 v0.2\\RaGlib\\LLParser.cs",
+              "RelativeToolTip": "RaGlib\\LLParser.cs",
+              "ViewState": "AgIAACQBAAAAAAAAAAAmwEABAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T19:06:03.019Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Lexer.cs",
+              "DocumentMoniker": "E:\\KR AVTOMAT\\RaGsys 2025 v0.2\\RaGlib\\Lexer.cs",
+              "RelativeDocumentMoniker": "RaGlib\\Lexer.cs",
+              "ToolTip": "E:\\KR AVTOMAT\\RaGsys 2025 v0.2\\RaGlib\\Lexer.cs",
+              "RelativeToolTip": "RaGlib\\Lexer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T19:05:59.39Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Grammar.cs",
+              "DocumentMoniker": "E:\\KR AVTOMAT\\RaGsys 2025 v0.2\\RaGlib\\Grammar.cs",
+              "RelativeDocumentMoniker": "RaGlib\\Grammar.cs",
+              "ToolTip": "E:\\KR AVTOMAT\\RaGsys 2025 v0.2\\RaGlib\\Grammar.cs",
+              "RelativeToolTip": "RaGlib\\Grammar.cs",
+              "ViewState": "AgIAAEoBAAAAAAAAAAAAwGcBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T19:05:52.93Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "PDA.cs",
+              "DocumentMoniker": "E:\\KR AVTOMAT\\RaGsys 2025 v0.2\\RaGlib\\PDA.cs",
+              "RelativeDocumentMoniker": "RaGlib\\PDA.cs",
+              "ToolTip": "E:\\KR AVTOMAT\\RaGsys 2025 v0.2\\RaGlib\\PDA.cs",
+              "RelativeToolTip": "RaGlib\\PDA.cs",
+              "ViewState": "AgIAAKkAAAAAAAAAAAAUwAwAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T18:25:08.117Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\KR AVTOMAT\\RaGsys 2025 v0.2\\RaGsys\\Program.cs",
+              "RelativeDocumentMoniker": "RaGsys\\Program.cs",
+              "ToolTip": "E:\\KR AVTOMAT\\RaGsys 2025 v0.2\\RaGsys\\Program.cs",
+              "RelativeToolTip": "RaGsys\\Program.cs",
+              "ViewState": "AgIAACwIAAAAAAAAAAAAAAsJAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-09T05:43:07.805Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ParseTree.cs",
+              "DocumentMoniker": "E:\\KR AVTOMAT\\RaGsys 2025 v0.2\\RaGlib\\ParseTree.cs",
+              "RelativeDocumentMoniker": "RaGlib\\ParseTree.cs",
+              "ToolTip": "E:\\KR AVTOMAT\\RaGsys 2025 v0.2\\RaGlib\\ParseTree.cs",
+              "RelativeToolTip": "RaGlib\\ParseTree.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-09T05:55:20.162Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "DataChain.cs",
+              "DocumentMoniker": "E:\\KR AVTOMAT\\RaGsys 2025 v0.2\\RaGlib\\SetL\\DataChain.cs",
+              "RelativeDocumentMoniker": "RaGlib\\SetL\\DataChain.cs",
+              "ToolTip": "E:\\KR AVTOMAT\\RaGsys 2025 v0.2\\RaGlib\\SetL\\DataChain.cs",
+              "RelativeToolTip": "RaGlib\\SetL\\DataChain.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-09T05:43:07.409Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "DataChains.cs",
+              "DocumentMoniker": "E:\\KR AVTOMAT\\RaGsys 2025 v0.2\\RaGlib\\SetL\\DataChains.cs",
+              "RelativeDocumentMoniker": "RaGlib\\SetL\\DataChains.cs",
+              "ToolTip": "E:\\KR AVTOMAT\\RaGsys 2025 v0.2\\RaGlib\\SetL\\DataChains.cs",
+              "RelativeToolTip": "RaGlib\\SetL\\DataChains.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAWwA8AAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-09T05:43:07.408Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "C:\\Users\\stud\\Desktop\\Proba\\RaGsys\\RaGlib\\Class1.cs",
+              "ToolTip": "C:\\Users\\stud\\Desktop\\Proba\\RaGsys\\RaGlib\\Class1.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-09T05:43:08.475Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

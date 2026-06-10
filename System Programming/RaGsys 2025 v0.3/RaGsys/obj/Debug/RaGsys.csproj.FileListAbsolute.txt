@@ -1,0 +1,73 @@
+C:\Users\stud\Desktop\Proba\RaGsys\RaGsys\bin\Debug\RaGsys.exe.config
+C:\Users\stud\Desktop\Proba\RaGsys\RaGsys\bin\Debug\RaGsys.exe
+C:\Users\stud\Desktop\Proba\RaGsys\RaGsys\bin\Debug\RaGsys.pdb
+C:\Users\stud\Desktop\Proba\RaGsys\RaGsys\obj\Debug\RaGsys.csproj.AssemblyReference.cache
+C:\Users\stud\Desktop\Proba\RaGsys\RaGsys\obj\Debug\RaGsys.csproj.SuggestedBindingRedirects.cache
+C:\Users\stud\Desktop\Proba\RaGsys\RaGsys\obj\Debug\RaGsys.csproj.CoreCompileInputs.cache
+C:\Users\stud\Desktop\Proba\RaGsys\RaGsys\obj\Debug\RaGsys.exe
+C:\Users\stud\Desktop\Proba\RaGsys\RaGsys\obj\Debug\RaGsys.pdb
+C:\Users\stud\Desktop\Proba\RaGsys\RaGsys\bin\Debug\RaGlib.dll
+C:\Users\stud\Desktop\Proba\RaGsys\RaGsys\bin\Debug\RaGlib.pdb
+C:\Users\stud\Desktop\Proba\RaGsys\RaGsys\obj\Debug\RaGsys.csproj.CopyComplete
+F:\MYLIBRARY\0. Courses\Course_Compiler\Rag System New Progect\RaGsys\RaGsys\obj\Debug\RaGsys.csproj.AssemblyReference.cache
+F:\MYLIBRARY\0. Courses\Course_Compiler\Rag System New Progect\RaGsys\RaGsys\obj\Debug\RaGsys.csproj.CoreCompileInputs.cache
+F:\MYLIBRARY\0. Courses\Course_Compiler\Rag System New Progect\RaGsys\RaGsys\obj\Debug\RaGsys.exe
+F:\MYLIBRARY\0. Courses\Course_Compiler\Rag System New Progect\RaGsys\RaGsys\obj\Debug\RaGsys.pdb
+F:\MYLIBRARY\0. Courses\Course_Compiler\Rag System New Progect\RaGsys\RaGsys\bin\Debug\RaGsys.exe.config
+F:\MYLIBRARY\0. Courses\Course_Compiler\Rag System New Progect\RaGsys\RaGsys\bin\Debug\RaGsys.exe
+F:\MYLIBRARY\0. Courses\Course_Compiler\Rag System New Progect\RaGsys\RaGsys\bin\Debug\RaGsys.pdb
+F:\MYLIBRARY\0. Courses\Course_Compiler\Rag System New Progect\RaGsys\RaGsys\bin\Debug\RaGlib.dll
+F:\MYLIBRARY\0. Courses\Course_Compiler\Rag System New Progect\RaGsys\RaGsys\bin\Debug\RaGlib.pdb
+F:\MYLIBRARY\0. Courses\Course_Compiler\Rag System New Progect\RaGsys\RaGsys\obj\Debug\RaGsys.csproj.Up2Date
+C:\Users\vzasl\Desktop\RaGsys 2024 v0.1\RaGsys\obj\Debug\RaGsys.csproj.AssemblyReference.cache
+C:\Users\vzasl\Desktop\RaGsys 2024 v0.1\RaGsys\obj\Debug\RaGsys.csproj.CoreCompileInputs.cache
+C:\Users\vzasl\Desktop\RaGsys 2024 v0.1\RaGsys\obj\Debug\RaGsys.exe
+C:\Users\vzasl\Desktop\RaGsys 2024 v0.1\RaGsys\obj\Debug\RaGsys.pdb
+C:\Users\vzasl\Desktop\RaGsys 2024 v0.1\RaGsys\bin\Debug\RaGsys.exe.config
+C:\Users\vzasl\Desktop\RaGsys 2024 v0.1\RaGsys\bin\Debug\RaGsys.exe
+C:\Users\vzasl\Desktop\RaGsys 2024 v0.1\RaGsys\bin\Debug\RaGsys.pdb
+C:\Users\vzasl\Desktop\RaGsys 2024 v0.1\RaGsys\bin\Debug\RaGlib.dll
+C:\Users\vzasl\Desktop\RaGsys 2024 v0.1\RaGsys\bin\Debug\RaGlib.pdb
+C:\Users\vzasl\Desktop\RaGsys 2024 v0.1\RaGsys\obj\Debug\RaGsys.csproj.Up2Date
+E:\KR AVTOMAT\RaGsys 2025 v0.2\RaGsys\bin\Debug\RaGsys.exe.config
+E:\KR AVTOMAT\RaGsys 2025 v0.2\RaGsys\bin\Debug\RaGsys.exe
+E:\KR AVTOMAT\RaGsys 2025 v0.2\RaGsys\bin\Debug\RaGsys.pdb
+E:\KR AVTOMAT\RaGsys 2025 v0.2\RaGsys\bin\Debug\RaGlib.dll
+E:\KR AVTOMAT\RaGsys 2025 v0.2\RaGsys\bin\Debug\RaGlib.pdb
+E:\KR AVTOMAT\RaGsys 2025 v0.2\RaGsys\obj\Debug\RaGsys.csproj.AssemblyReference.cache
+E:\KR AVTOMAT\RaGsys 2025 v0.2\RaGsys\obj\Debug\RaGsys.csproj.CoreCompileInputs.cache
+E:\KR AVTOMAT\RaGsys 2025 v0.2\RaGsys\obj\Debug\RaGsys.csproj.Up2Date
+E:\KR AVTOMAT\RaGsys 2025 v0.2\RaGsys\obj\Debug\RaGsys.exe
+E:\KR AVTOMAT\RaGsys 2025 v0.2\RaGsys\obj\Debug\RaGsys.pdb
+C:\Users\yashelter\Desktop\RaGsys 2025 v0.2\RaGsys\obj\Debug\RaGsys.csproj.AssemblyReference.cache
+C:\Users\yashelter\Desktop\RaGsys 2025 v0.2\RaGsys\obj\Debug\RaGsys.csproj.CoreCompileInputs.cache
+C:\Users\yashelter\Desktop\RaGsys 2025 v0.2\RaGsys\obj\Debug\RaGsys.exe
+C:\Users\yashelter\Desktop\RaGsys 2025 v0.2\RaGsys\obj\Debug\RaGsys.pdb
+C:\Users\yashelter\Desktop\RaGsys 2025 v0.2\RaGsys\bin\Debug\RaGsys.exe.config
+C:\Users\yashelter\Desktop\RaGsys 2025 v0.2\RaGsys\bin\Debug\RaGsys.exe
+C:\Users\yashelter\Desktop\RaGsys 2025 v0.2\RaGsys\bin\Debug\RaGsys.pdb
+C:\Users\yashelter\Desktop\RaGsys 2025 v0.2\RaGsys\bin\Debug\RaGlib.dll
+C:\Users\yashelter\Desktop\RaGsys 2025 v0.2\RaGsys\bin\Debug\RaGlib.pdb
+C:\Users\yashelter\Desktop\RaGsys 2025 v0.2\RaGsys\obj\Debug\RaGsys.csproj.Up2Date
+C:\Users\stud\Desktop\NL-2025\RaGsys 2025 v0.21\RaGsys\bin\Debug\RaGsys.exe.config
+C:\Users\stud\Desktop\NL-2025\RaGsys 2025 v0.21\RaGsys\bin\Debug\RaGsys.exe
+C:\Users\stud\Desktop\NL-2025\RaGsys 2025 v0.21\RaGsys\bin\Debug\RaGsys.pdb
+C:\Users\stud\Desktop\NL-2025\RaGsys 2025 v0.21\RaGsys\bin\Debug\RaGlib.dll
+C:\Users\stud\Desktop\NL-2025\RaGsys 2025 v0.21\RaGsys\bin\Debug\RaGlib.pdb
+C:\Users\stud\Desktop\NL-2025\RaGsys 2025 v0.21\RaGsys\obj\Debug\RaGsys.csproj.AssemblyReference.cache
+C:\Users\stud\Desktop\NL-2025\RaGsys 2025 v0.21\RaGsys\obj\Debug\RaGsys.csproj.SuggestedBindingRedirects.cache
+C:\Users\stud\Desktop\NL-2025\RaGsys 2025 v0.21\RaGsys\obj\Debug\RaGsys.csproj.CoreCompileInputs.cache
+C:\Users\stud\Desktop\NL-2025\RaGsys 2025 v0.21\RaGsys\obj\Debug\RaGsys.csproj.CopyComplete
+C:\Users\stud\Desktop\NL-2025\RaGsys 2025 v0.21\RaGsys\obj\Debug\RaGsys.exe
+C:\Users\stud\Desktop\NL-2025\RaGsys 2025 v0.21\RaGsys\obj\Debug\RaGsys.pdb
+C:\Users\stud\Desktop\NL-2025\RaGsys 2025 v0.3\RaGsys\bin\Debug\RaGsys.exe.config
+C:\Users\stud\Desktop\NL-2025\RaGsys 2025 v0.3\RaGsys\bin\Debug\RaGsys.exe
+C:\Users\stud\Desktop\NL-2025\RaGsys 2025 v0.3\RaGsys\bin\Debug\RaGsys.pdb
+C:\Users\stud\Desktop\NL-2025\RaGsys 2025 v0.3\RaGsys\bin\Debug\RaGlib.dll
+C:\Users\stud\Desktop\NL-2025\RaGsys 2025 v0.3\RaGsys\bin\Debug\RaGlib.pdb
+C:\Users\stud\Desktop\NL-2025\RaGsys 2025 v0.3\RaGsys\obj\Debug\RaGsys.csproj.AssemblyReference.cache
+C:\Users\stud\Desktop\NL-2025\RaGsys 2025 v0.3\RaGsys\obj\Debug\RaGsys.csproj.SuggestedBindingRedirects.cache
+C:\Users\stud\Desktop\NL-2025\RaGsys 2025 v0.3\RaGsys\obj\Debug\RaGsys.csproj.CoreCompileInputs.cache
+C:\Users\stud\Desktop\NL-2025\RaGsys 2025 v0.3\RaGsys\obj\Debug\RaGsys.csproj.CopyComplete
+C:\Users\stud\Desktop\NL-2025\RaGsys 2025 v0.3\RaGsys\obj\Debug\RaGsys.exe
+C:\Users\stud\Desktop\NL-2025\RaGsys 2025 v0.3\RaGsys\obj\Debug\RaGsys.pdb

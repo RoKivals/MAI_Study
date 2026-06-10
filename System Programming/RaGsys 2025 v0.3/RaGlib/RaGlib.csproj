@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8E02F40B-0F0C-40DC-B358-0C86CCFF629B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RaGlib</RootNamespace>
+    <AssemblyName>RaGlib</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ATScheme.cs" />
+    <Compile Include="Automata\DeltaQSigma.cs" />
+    <Compile Include="Automata\DeltaQSigmaGamma.cs" />
+    <Compile Include="Automata\DeltaQSigmaGammaEx.cs" />
+    <Compile Include="Automata\TMTransition.cs" />
+    <Compile Include="Automata\TuringMachine.cs" />
+    <Compile Include="AutomateWithOpSymbols.cs" />
+    <Compile Include="Compound_FSAutomate.cs" />
+    <Compile Include="Core\AGrammar.cs" />
+    <Compile Include="Core\OPSymbolOperatrion.cs" />
+    <Compile Include="Core\Production.cs" />
+    <Compile Include="Core\Symbol.cs" />
+    <Compile Include="Core\Symbol_Attribute.cs" />
+    <Compile Include="Core\Symbol_Operation.cs" />
+    <Compile Include="CPDA.cs" />
+    <Compile Include="DPDA.cs" />
+    <Compile Include="EDPDA.cs" />
+    <Compile Include="FSAutomate.cs" />
+    <Compile Include="Grammar.cs" />
+    <Compile Include="Grammars\ATGrammar.cs" />
+    <Compile Include="Grammars\AttrFunction.cs" />
+    <Compile Include="Grammars\AttrProduction.cs" />
+    <Compile Include="GrammarWithOpSymbol.cs" />
+    <Compile Include="Lexer.cs" />
+    <Compile Include="LLParser.cs" />
+    <Compile Include="LRParser.cs" />
+    <Compile Include="myCompiler.cs" />
+    <Compile Include="myHTable.cs" />
+    <Compile Include="MyLRParser.cs" />
+    <Compile Include="mySDTSchemata.cs" />
+    <Compile Include="ParseTree.cs" />
+    <Compile Include="PDA.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Pumping.cs" />
+    <Compile Include="SDTBuilder.cs" />
+    <Compile Include="SDTranslation.cs" />
+    <Compile Include="SetL\DataBool.cs" />
+    <Compile Include="SetL\DataChain.cs" />
+    <Compile Include="SetL\DataChains.cs" />
+    <Compile Include="SetL\DataNode.cs" />
+    <Compile Include="SetL\DataRule.cs" />
+    <Compile Include="SetL\DataRules.cs" />
+    <Compile Include="SetL\DataSymbol.cs" />
+    <Compile Include="SetL\DataSymbols.cs" />
+    <Compile Include="SetL\DataVariableSet.cs" />
+    <Compile Include="SetL\Function.cs" />
+    <Compile Include="SetL\OpAutomate.cs" />
+    <Compile Include="SetL\OpCondition.cs" />
+    <Compile Include="SetL\OpFrom.cs" />
+    <Compile Include="SetL\OpFunction.cs" />
+    <Compile Include="SetL\OpKlini.cs" />
+    <Compile Include="SetL\OpNode.cs" />
+    <Compile Include="SetL\OpSetIntersect.cs" />
+    <Compile Include="SetL\OpSetUnion.cs" />
+    <Compile Include="SetL\OpVariable.cs" />
+    <Compile Include="SetL\Parser.cs" />
+    <Compile Include="SetL\Set.cs" />
+    <Compile Include="SetL\SETL.cs" />
+    <Compile Include="SetL\Utils.cs" />
+    <Compile Include="SetL\Variable.cs" />
+    <Compile Include="SLRParser.cs" />
+    <Compile Include="Tools\GrammarGenerator.cs" />
+    <Compile Include="Tools\NewGrammarGenerator_Timofeev.cs" />
+    <Compile Include="transGrammar.cs" />
+    <Compile Include="Utility.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
